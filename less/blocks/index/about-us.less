@@ -5,11 +5,34 @@
 }
 
 .about-us__wrapper {
+  position: relative;
   padding-top: 55px;
+  background: url('../../../img/png/about-us-background.png') no-repeat 890px bottom;
+}
 
-  background: url('../../../img/png/about-us-circle-text.png') no-repeat 1045px 85%,
-  url('../../../img/png/about-us-background.png') no-repeat 890px bottom;
+.about-us__wrapper::after {
+  content: '';
+  display: block;
+  width: 143px;
+  height: 143px;
+  position: absolute;
+  left: 71%;
+  top: 48%;
+  background: url('../../../img/png/about-us-circle-text.png') no-repeat center;
 
+  animation-duration:10s;
+  animation-name:move;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move{
+  from{
+    transform: rotate(-360deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 .about-us__title {
