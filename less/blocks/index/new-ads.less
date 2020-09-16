@@ -1,0 +1,131 @@
+.new-ads {
+  padding-top: 82px;
+  background: #FFFFFF;
+}
+
+.new-ads__title {
+  font-family: "Gilroy-Regular";
+  font-size: 49px;
+  line-height: 70px;
+  color: #3D3D3D;
+  margin-bottom: 100px;
+}
+
+.new-ads__topic-list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  height: 115px;
+}
+
+.new-ads__topic-item {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.new-ads__topic-item--active {
+  background: #F2F4F5;
+}
+
+.new-ads__topic-item:nth-child(2)::before,
+.new-ads__topic-item:nth-child(2)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 85px;
+  width: 3px;
+  background-color: #DCE8F1;
+}
+
+.new-ads__topic-item:nth-child(2)::before {
+  left: 0;
+}
+
+.new-ads__topic-item:nth-child(2)::after {
+  right: 0;
+}
+
+.new-ads__topic-circle {
+  width: 80px;
+  height: 80px;
+  background: #ACD9F3;
+  border-radius: 100px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.new-ads__topic-circle svg {
+  position: absolute;
+  top: calc(50% - 21px);
+  left: calc(50% - 24px);
+}
+
+.new-ads__topic-title {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #063453;
+}
+
+.new-ads__work-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.new-ads__work-item {
+  width: 355px;
+  height: 435px;
+  background: #FFFFFF;
+}
+
+.new-ads__item-title {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #063453;
+}
+
+.new-ads__company-name {
+  font-size: 16px;
+  line-height: 30px;
+  color: #BFCED9;
+}
+
+.new-ads__user-name {
+  font-size: 18px;
+  line-height: 30px;
+  color: #464646;
+}
+
+.new-ads__info-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-ads__info-wrap--bottom {
+  font-size: 16px;
+  line-height: 30px;
+  color: #7B8A99;
+}
+
+.new-ads__work-list {
+  background: #F2F4F5;
+}
+
+.new-ads__see-all {
+  display: block;
+  width: max-content;
+  padding: 20px 110px;
+  margin-left: auto;
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  line-height: 30px;
+  color: #7B8A99;
+  background: #DCE8F1;
+  border-radius: 8px;
+}
