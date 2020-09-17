@@ -5,9 +5,17 @@
 }
 
 .about-us__wrapper {
+  display: flex;
   position: relative;
   padding-top: 55px;
-  background: url('../../../img/png/about-us-background.png') no-repeat 890px bottom;
+}
+
+.about-us__desc-block {
+  width: 100%;
+}
+
+.about-us__wrapper {
+  background: url('../../../img/png/about-us-background.png') no-repeat right;
 }
 
 .about-us__wrapper::after {
@@ -16,21 +24,21 @@
   width: 143px;
   height: 143px;
   position: absolute;
-  left: 71%;
-  top: 48%;
+  right: 360px;
+  top: 245px;
   background: url('../../../img/png/about-us-circle-text.png') no-repeat center;
 
-  animation-duration:10s;
-  animation-name:move;
-  animation-iteration-count:infinite;
+  animation-duration: 10s;
+  animation-name: move;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes move{
-  from{
+@keyframes move {
+  from {
     transform: rotate(-360deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
@@ -58,15 +66,76 @@
 }
 
 .about-us__desc {
-  max-width: 738px;
+  width: 45%;
   font-size: 20px;
   line-height: 30px;
 }
 
 .about-us__bottom-text {
-  max-width: 995px;
+  width: 60%;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
   color: #7B8A99;
+}
+
+@media (max-width: 1600px) {
+  .about-us__desc {
+    width: 100%;
+  }
+
+  .about-us__add-desc {
+    width: calc(100% - 685px);
+  }
+
+  .about-us__wrapper {
+    background: url(../../../img/png/about-us-background.png) no-repeat right 195px;
+  }
+
+  .about-us__wrapper::after {
+    top: 400px;
+  }
+
+
+  .about-us__bottom-text {
+    margin-top: 235px;
+    width: calc(100% - 425px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-us__bottom-text {
+    width: 100%;
+    margin-top: 90px;
+  }
+
+  .about-us__add-desc {
+    margin-top: 330px;
+    width: calc(100% - 495px);
+  }
+
+  .about-us__wrapper {
+    background: url(../../../img/png/about-us-background.png) no-repeat right 230px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .about-us__wrapper {
+    background: url('../../../img/png/about-us-background.png') no-repeat right 50%;
+    background-size: contain;
+  }
+
+  .about-us__wrapper::after {
+    top: 470px;
+    right: 50%;
+  }
+
+  .about-us__add-desc {
+    display: none;
+  }
+
+  .about-us__bottom-text {
+    margin-top: 560px;
+  }
 }

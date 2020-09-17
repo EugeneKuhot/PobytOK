@@ -7,6 +7,11 @@
   list-style: none;
   text-transform: uppercase;
   color: #fff;
+  padding: 0;
+}
+
+.header-nav__item:first-child {
+  display: none;
 }
 
 .header-nav__link {
@@ -27,7 +32,10 @@
   left: 30px;
   width: 20px;
   height: 20px;
-  background: url("../../../img/svg/login.svg") no-repeat;
+}
+
+.main-btn::before {
+  background: url("../../../img/svg/home.svg") no-repeat;
 }
 
 .login-btn::before {
@@ -40,4 +48,66 @@
 
 .registration-btn {
   border: 2px solid #FFFFFF;
+}
+
+@media (max-width: 995px) {
+
+  .header-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    background: #fff;
+    text-transform: capitalize;
+    z-index: 5;
+    box-shadow: 0px 0px 24px rgba(6, 52, 83, 0.1);
+  }
+
+  .header-nav__list {
+    justify-content: space-between;
+  }
+
+  .header-nav__item:first-child {
+    display: block;
+  }
+
+  .header-nav__item {
+    font-size: 16px;
+    line-height: 18px;
+    color: #063453;
+    width: 33.33%;
+  }
+
+  .header-nav__item--active {
+    font-family: "Gilroy-Bold";
+  }
+
+  .header-nav__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 10px 0 5px;
+  }
+
+  .header-nav__link::before {
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 8px);
+  }
+
+  .login-btn::before {
+    background: url("../../../img/svg/logintabl.svg") no-repeat;
+  }
+
+  .registration-btn::before {
+    background: url("../../../img/svg/reg.svg") no-repeat;
+  }
+
+  .tablet-container {
+    width: 85%;
+    margin: auto;
+  }
 }

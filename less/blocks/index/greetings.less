@@ -1,18 +1,59 @@
 .greetings__container {
   min-height: 500px;
   padding-top: 195px;
-  background: url('../../../img/svg/Vector.svg') no-repeat 55% 500px,
-  url('../../../img/svg/1.svg') no-repeat 85% 700px,
-  url('../../../img/svg/Ellipse.svg') no-repeat center -1000px;
   transition: all 1s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.greetings__container--onload {
+.greetings__circle {
+  width: 75%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 14%;
+  background: url('../../../img/svg/Ellipse.svg') no-repeat center 0;
+  background-size: cover;
+}
+
+.greetings__ok {
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+  width: 100%;
+  height: 500px;
+}
+
+.greetings__o {
+  background-image: url('../../../img/svg/Vector.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  right: 23%;
+  width: 29%;
+}
+
+.greetings__k {
+  background-image: url('../../../img/svg/1.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 480px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+}
+
+/*.greetings__container--onload {
   background: url("../../../img/svg/Vector.svg") no-repeat 55% bottom,
   url("../../../img/svg/1.svg") no-repeat 85% bottom,
   url("../../../img/svg/Ellipse.svg") no-repeat center top;
   transition: all 1s ease;
-}
+}*/
 
 .greetings__title {
   font-family: "Gilroy-Bold";

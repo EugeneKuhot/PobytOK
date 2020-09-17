@@ -24,6 +24,7 @@
 .faq__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 1;
 }
 
@@ -59,7 +60,7 @@
 
 .faq__add-btn {
   width: 30px;
-  height: 35px;
+  height: 36px;
   border: 0;
   background: 0 0;
   color: #7b8a99;
@@ -130,4 +131,15 @@
   position: absolute;
   bottom: 0;
   z-index: 0;
+}
+
+@media (max-width: 995px) {
+  .faq__wrapper {
+    flex-direction: column;
+  }
+
+  .faq__questions-block,
+  .faq__form-block {
+    width: 100%;
+  }
 }
