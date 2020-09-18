@@ -6,54 +6,23 @@
   overflow: hidden;
 }
 
-.greetings__circle {
-  width: 75%;
-  height: 500px;
+.greetings__ellipse {
   position: absolute;
   top: 0;
-  left: 14%;
-  background: url('../../../img/svg/Ellipse.svg') no-repeat center 0;
-  background-size: cover;
+  left: 10%;
+  width: 75%;
 }
 
 .greetings__ok {
   position: absolute;
   bottom: 0;
-  right: 120px;
-  width: 100%;
-  height: 500px;
-}
+  top: calc(50% - 250px);
+  right: 60px;
+  width: 65%;
+  max-height: 100%;
+  z-index: 1;
 
-.greetings__o {
-  background-image: url('../../../img/svg/Vector.svg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
-  height: 500px;
-  position: absolute;
-  bottom: 0;
-  right: 23%;
-  width: 29%;
 }
-
-.greetings__k {
-  background-image: url('../../../img/svg/1.svg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
-  height: 480px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 25%;
-}
-
-/*.greetings__container--onload {
-  background: url("../../../img/svg/Vector.svg") no-repeat 55% bottom,
-  url("../../../img/svg/1.svg") no-repeat 85% bottom,
-  url("../../../img/svg/Ellipse.svg") no-repeat center top;
-  transition: all 1s ease;
-}*/
 
 .greetings__title {
   font-family: "Gilroy-Bold";
@@ -62,4 +31,27 @@
   font-size: 60px;
   line-height: 78px;
   color: #063453;
+  position: relative;
+  z-index: 2;
 }
+
+@media (max-width: 1050px) {
+  .greetings__ok {
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 995px) {
+  .greetings__ok {
+    top: calc(50% - 190px);
+    width: 55%;
+  }
+}
+
+@media (max-width: 420px) {
+  .greetings__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+

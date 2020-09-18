@@ -91,17 +91,38 @@
 .new-ads__ads-wrap {
   background: #F2F4F5;
   padding-top: 65px;
-  padding-bottom: 65px;
+  padding-bottom: 33px;
 }
 
-.new-ads__ad-link img {
-  cursor: pointer;
+.new-ads__active-wrap::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.new-ads__active-wrap::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f2f4f5;
+}
+
+.new-ads__active-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #ebebeb;
+}
+
+.new-ads__item img {
   transition: all .3s ease;
 }
 
-.new-ads__ad-link:hover img {
+.new-ads__item:hover img {
   transform: scale(1.1);
   transition: all .3s ease;
+}
+
+.new-ads__ad-link:hover,
+.new-ads__ad-link:focus {
+  text-decoration: underline;
 }
 
 .new-ads__active-list {
@@ -110,16 +131,18 @@
   list-style: none;
   padding: 0;
   margin-bottom: 60px;
+  width: 1512px;
+  position: relative;
 }
 
-.new-ads__work-item {
+.new-ads__item {
   width: 355px;
   height: 435px;
   background: #FFFFFF;
   overflow: hidden;
 }
 
-.new-ads__work-item:not(:last-child) {
+.new-ads__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -131,6 +154,7 @@
   height: 227px;
   position: relative;
 }
+
 
 .new-ads__logo-wrap img {
   max-width: 100%;
@@ -144,14 +168,20 @@
   width: 45px;
   height: 30px;
   position: absolute;
-  color: #FFF;
+  color: #DFE5EC;
   top: 30px;
   left: 20px;
   z-index: 1;
+  transition: all .3s ease;
+}
+
+.new-ads__logo-wrap:hover::before {
+  color: #063453;
+  transition: all .3s ease;
 }
 
 .new-ads__like-btn {
-  background: url("../../../img/svg/like.svg") no-repeat;
+  background: transparent;
   width: 25px;
   height: 25px;
   position: absolute;
@@ -159,15 +189,27 @@
   right: 20px;
   z-index: 1;
   border: none;
+  transition: all .3s ease;
+}
+
+.new-ads__like-btn:hover svg path,
+.new-ads__like-btn:focus svg path {
+  stroke: #063453;
+  transition: all .3s ease;
 }
 
 .new-ads__item-title {
-  margin-top: 25px;
+  margin-top: 0;
   margin-bottom: 5px;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
   color: #063453;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .new-ads__company-name {
@@ -196,7 +238,6 @@
 .new-ads__localization,
 .new-ads__user-name,
 .new-ads__company-name,
-.new-ads__item-title,
 .new-ads__date,
 .new-ads__money {
   white-space: nowrap;
@@ -245,6 +286,11 @@
   color: #00AB5B;
 }
 
+.new-ads__title-block {
+  height: 100px;
+  overflow: hidden;
+}
+
 .new-ads__info-block {
   padding: 25px 20px 30px;
 }
@@ -266,11 +312,93 @@
   width: 355px;
   padding: 20px 0;
   text-align: center;
-  margin-left: auto;
   font-family: "Gilroy-Bold";
   font-size: 18px;
   line-height: 30px;
   color: #7B8A99;
   background: #DCE8F1;
   border-radius: 8px;
+  position: sticky;
+  left: 0;
+  transition: all .3s ease;
+}
+
+.new-ads__see-all:hover,
+.new-ads__see-all:focus {
+  background: #063453;
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.new-ads__active-wrap {
+  overflow-x: scroll;
+  padding-bottom: 33px;
+}
+
+@media (max-width: 1024px) {
+  .new-ads__active-wrap::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  .new-ads__active-wrap::-webkit-scrollbar {
+   display: none;
+  }
+
+  .new-ads__active-wrap::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .new-ads__topic-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .new-ads__active-list {
+    width: 1070px;
+  }
+
+  .new-ads__item {
+    width: 245px;
+    height: 370px;
+  }
+
+  .new-ads__logo-wrap {
+    height: 190px;
+  }
+
+  .new-ads__see-all {
+    width: 245px;
+  }
+
+  .new-ads__item-title {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .new-ads__info-block {
+    padding: 0px 10px 30px;
+  }
+
+  .new-ads__company-name,
+  .new-ads__user-name,
+  .new-ads__localization,
+  .new-ads__date {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .new-ads__topic-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 420px) {
+  .new-ads__title-wrap {
+    padding-top: 1px;
+  }
 }

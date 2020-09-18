@@ -19,6 +19,7 @@
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -60,6 +61,11 @@ a {
   cursor: pointer;
 }
 
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  background: #DFE5EC;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -81,4 +87,17 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
   background: url("../img/svg/check-on.svg");
+}
+
+@media (max-width: 690px) {
+  section .section-title {
+    font-size: 29px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  section .section-title {
+    font-size: 20px;
+  }
 }
