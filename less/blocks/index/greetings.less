@@ -1,33 +1,22 @@
 .greetings__container {
+  display: flex;
+  align-items: center;
   min-height: 500px;
-  padding-top: 195px;
   transition: all 1s ease;
   position: relative;
   overflow: hidden;
-}
 
-.greetings__ellipse {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  width: 75%;
-}
+  background: url("../../../img/svg/ok.svg") no-repeat 85%,
+              url("../../../img/svg/Ellipse.svg") no-repeat center;
 
-.greetings__ok {
-  position: absolute;
-  bottom: 0;
-  top: calc(50% - 250px);
-  right: 60px;
-  width: 65%;
-  max-height: 100%;
-  z-index: 1;
-
+  background-size: 60%;
 }
 
 .greetings__title {
   font-family: "Gilroy-Bold";
   margin: 0 auto;
-  width: 535px;
+  width: 61%;
+  max-width: 535px;
   font-size: 60px;
   line-height: 78px;
   color: #063453;
@@ -35,23 +24,67 @@
   z-index: 2;
 }
 
-@media (max-width: 1050px) {
-  .greetings__ok {
-    bottom: 10%;
+@media (max-width: 1250px) {
+  .greetings__container {
+    min-height: 400px;
   }
 }
 
-@media (max-width: 995px) {
-  .greetings__ok {
-    top: calc(50% - 190px);
-    width: 55%;
+@media (max-width: 850px) {
+  .greetings__container {
+    min-height: 350px;
+    background: url("../../../img/svg/ok.svg") no-repeat 75%,
+                url("../../../img/svg/Ellipse.svg") no-repeat top center;
+    background-size: 60%;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 780px) {
+  .greetings__container {
+    min-height: 250px;
+    background: url("../../../img/svg/ok.svg") no-repeat 75%,
+                url("../../../img/svg/Ellipse.svg") no-repeat top center;
+    background-size: 50%;
+  }
+
+  .greetings__title {
+    font-size: 35px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 630px) {
+  .greetings__container {
+    min-height: 200px;
+    background: url('../../../img/svg/ok.svg') no-repeat 65%,
+                url('../../../img/svg/Ellipse.svg') no-repeat top center;
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 505px) {
   .greetings__title {
     font-size: 18px;
     line-height: 28px;
   }
+
+  .greetings__container {
+    min-height: 157px;
+  }
 }
 
+@media (max-width: 400px) {
+  .greetings__container {
+    background: url('../../../img/svg/ok.svg') no-repeat 65%,
+    url('../../../img/svg/Ellipse.svg') no-repeat top center;
+    background-size: 60%;
+  }
+}
+
+@media (max-width: 330px) {
+  .greetings__container {
+    background: url('../../../img/svg/ok.svg') no-repeat 65%,
+    url('../../../img/svg/Ellipse.svg') no-repeat top center;
+    background-size: 70%;
+  }
+}
