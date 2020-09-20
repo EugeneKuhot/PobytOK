@@ -6,10 +6,15 @@
   position: relative;
   overflow: hidden;
 
-  background: url("../../../img/svg/ok.svg") no-repeat 85%,
-              url("../../../img/svg/Ellipse.svg") no-repeat center;
+  background: url("../../../img/svg/ok.svg") no-repeat 85% 1000px,
+              url("../../../img/svg/Ellipse.svg") no-repeat center -1000px;
 
   background-size: 60%;
+}
+
+.greetings__container--onload {
+  background: url("../../../img/svg/ok.svg") no-repeat 85%,
+              url("../../../img/svg/Ellipse.svg") no-repeat center;
 }
 
 .greetings__title {
@@ -25,13 +30,14 @@
 }
 
 @media (max-width: 1250px) {
-  .greetings__container {
+  .greetings__container--onload {
     min-height: 400px;
+    background-size: 60%;
   }
 }
 
 @media (max-width: 850px) {
-  .greetings__container {
+  .greetings__container--onload {
     min-height: 350px;
     background: url("../../../img/svg/ok.svg") no-repeat 75%,
                 url("../../../img/svg/Ellipse.svg") no-repeat top center;
@@ -40,7 +46,7 @@
 }
 
 @media (max-width: 780px) {
-  .greetings__container {
+  .greetings__container--onload {
     min-height: 250px;
     background: url("../../../img/svg/ok.svg") no-repeat 75%,
                 url("../../../img/svg/Ellipse.svg") no-repeat top center;
@@ -54,7 +60,7 @@
 }
 
 @media (max-width: 630px) {
-  .greetings__container {
+  .greetings__container--onload {
     min-height: 200px;
     background: url('../../../img/svg/ok.svg') no-repeat 65%,
                 url('../../../img/svg/Ellipse.svg') no-repeat top center;
@@ -68,13 +74,13 @@
     line-height: 28px;
   }
 
-  .greetings__container {
+  .greetings__container--onload {
     min-height: 157px;
   }
 }
 
 @media (max-width: 400px) {
-  .greetings__container {
+  .greetings__container--onload {
     background: url('../../../img/svg/ok.svg') no-repeat 65%,
     url('../../../img/svg/Ellipse.svg') no-repeat top center;
     background-size: 60%;
@@ -82,7 +88,7 @@
 }
 
 @media (max-width: 330px) {
-  .greetings__container {
+  .greetings__container--onload {
     background: url('../../../img/svg/ok.svg') no-repeat 65%,
     url('../../../img/svg/Ellipse.svg') no-repeat top center;
     background-size: 70%;
