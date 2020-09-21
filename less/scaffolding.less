@@ -1,18 +1,37 @@
 @font-face {
-  font-family: "Gilroy-Regular";
-  src: url("../fonts/Gilroy-Regular.woff"),
-       url('../fonts/Gilroy-Regular.ttf'),
-       url("../fonts/Gilroy-Regular.eot");
+  font-family: "Cuprum-Regular";
+  src: url("../fonts/Cuprum-Regular.woff2"),
+       url("../fonts/Cuprum-Regular.woff");
 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy-Bold";
-  src: url("../fonts/Gilroy-Bold.woff"),
-       url('../fonts/Gilroy-Bold.ttf'),
-       url("../fonts/Gilroy-Bold.eot");
+  font-family: "Cuprum-Bold";
+  src: url("../fonts/Cuprum-Bold.woff2"),
+       url("../fonts/Cuprum-Bold.woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Khula-Bold";
+  src: url("../fonts/Khula-Bold.woff2"),
+       url("../fonts/Khula-Bold.woff"),
+       url("../fonts/Khula-Bold.ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Khula-Regular";
+  src: url("../fonts/Khula-Regular.woff2"),
+       url("../fonts/Khula-Regular.woff"),
+       url("../fonts/Khula-Regular.ttf");
+
   font-weight: normal;
   font-style: normal;
 }
@@ -48,12 +67,16 @@ ul {
 }
 
 body {
-  font-family: "Gilroy-Regular", "Arial", sans-serif;
+  font-family: "Cuprum-Regular", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
   min-width: 320px;
   padding: 0;
   margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Khula-Bold", "Arial", sans-serif;
 }
 
 a {
@@ -89,7 +112,23 @@ input[type="checkbox"]:checked + label::before {
   background: url("../img/svg/check-on.svg");
 }
 
-@media (max-width: 690px) {
+.faq__see-all,
+.new-ads__see-all {
+  display: block;
+  width: 355px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7B8A99;
+  background: #DCE8F1;
+  border-radius: 8px;
+  position: sticky;
+  left: 0;
+  transition: all .3s ease;
+}
+
+@media (max-width: 780px) {
   section .section-title {
     font-size: 29px;
     text-align: center;
@@ -102,7 +141,7 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 476px) {
   section .section-title {
     font-size: 20px;
   }

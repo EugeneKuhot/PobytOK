@@ -1,5 +1,6 @@
 .services {
   display: flex;
+  justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 65px;
   background: #FFFFFF;
@@ -44,9 +45,9 @@
 .services__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0;
-  width: 70%;
+  width: 62%;
   list-style: none;
 }
 
@@ -54,6 +55,7 @@
   display: block;
   width: 155px;
   height: 175px;
+  margin-bottom: 45px;
 }
 
 .services__link {
@@ -71,54 +73,22 @@
   position: absolute;
   top: 0;
   left: calc(50% - 65px);
+  background: url("../../../img/svg/service-ring.svg");
 }
 
-.services__link--work::before {
-  background: url("../../../img/svg/work.svg") no-repeat;
+.services__link-icon {
+  top: calc(50% - 60px);
+  left: calc(50% - 37px);
+  position: absolute;
 }
 
-.services__link--property::before {
-  background: url("../../../img/svg/property.svg") no-repeat;
+.services__link-icon {
+  transition: all .3s ease;
 }
 
-.services__link--legalization::before {
-  background: url("../../../img/svg/legalization.svg") no-repeat;
-}
-
-.services__link--ads::before {
-  background: url("../../../img/svg/ads.svg") no-repeat;
-}
-
-.services__link--finance::before {
-  background: url("../../../img/svg/finance.svg") no-repeat;
-}
-
-.services__link--insurance::before {
-  background: url("../../../img/svg/insurance.svg") no-repeat;
-}
-
-.services__link--transport::before {
-  background: url("../../../img/svg/transport.svg") no-repeat;
-}
-
-.services__link--law::before {
-  background: url("../../../img/svg/law.svg") no-repeat;
-}
-
-.services__link--business::before {
-  background: url("../../../img/svg/business.svg") no-repeat;
-}
-
-.services__link--blog::before {
-  background: url("../../../img/svg/blog.svg") no-repeat;
-}
-
-.services__link--rest::before {
-  background: url("../../../img/svg/rest.svg") no-repeat;
-}
-
-.services__link--forum::before {
-  background: url("../../../img/svg/forum.svg") no-repeat;
+.services__link:hover .services__link-icon {
+  transform: scale(1.11);
+  transition: all .3s ease;
 }
 
 .services__title {
@@ -126,12 +96,6 @@
   line-height: 30px;
   text-align: center;
   color: #063453;
-}
-
-@media (max-width: 1692px) {
-  .services__list {
-    justify-content: space-evenly;
-  }
 }
 
 @media (max-width: 995px) {
@@ -160,6 +124,7 @@
 
   .services__list {
     margin-top: 65px;
+    justify-content: center;
   }
 
   .services__item {
@@ -201,5 +166,11 @@
 
   .services__title {
     font-size: 10px;
+  }
+
+  .services__link-icon {
+    width: 46px;
+    left: calc(50% - 23px);
+    top: calc(33% - 23px);
   }
 }

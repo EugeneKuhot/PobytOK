@@ -15,7 +15,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 @keyframes move {
@@ -90,17 +89,38 @@
 }
 
 .about-us__bottom-text {
-  width: 100%;
+  width: 60%;
   margin-top: 25px;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
   color: #7B8A99;
   margin-bottom: 0;
+  margin-top: -120px;
+  z-index: 2;
 }
 
 .about-us__add-btn {
   display: none;
+}
+
+@media (max-width: 1595px) {
+  .about-us__bottom-text {
+    margin-top: -90px;
+  }
+}
+
+@media (max-width: 1475px) {
+  .about-us__bottom-text {
+    margin-top: -45px;
+  }
+}
+
+@media (max-width: 1435px) {
+  .about-us__bottom-text {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 
 

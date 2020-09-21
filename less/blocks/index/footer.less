@@ -60,10 +60,16 @@
   flex-direction: column;
 }
 
-.footer__mail-link{
+.footer__mail-link {
   font-size: 20px;
   line-height: 38px;
   color: #FFFFFF;
+  transition: all .3s ease;
+}
+
+.footer__mail-link:hover {
+  color: #ADD9F4;
+  transition: all .3s ease;
 }
 
 .footer__social-list {
@@ -71,11 +77,18 @@
   justify-content: space-between;
   padding: 0;
   list-style: none;
-  max-width: 230px;
+  width: 200px;
 }
 
 .footer__social-link {
   font-size: 0;
+  fill: #fff;
+  transition: all .3s ease;
+}
+
+.footer__social-link:hover svg {
+  fill: #ADD9F4;
+  transition: all .3s ease;
 }
 
 .footer__copyright {
