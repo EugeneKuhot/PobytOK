@@ -54,6 +54,7 @@
 .services__item {
   display: block;
   width: 25%;
+  max-width: 155px;
   height: 175px;
   margin-bottom: 45px;
 }
@@ -99,6 +100,12 @@
   line-height: 30px;
   text-align: center;
   color: #063453;
+}
+
+@media (max-width: 1900px) {
+  .services__item {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1150px) {
