@@ -18,6 +18,7 @@
 .footer__address-title,
 .footer__mail-title,
 .footer__social-title {
+  font-family: "Cuprum-Regular", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
@@ -35,20 +36,21 @@
   display: block;
   position: absolute;
   left: 0;
+  top: 4px;
 }
 
 .footer__address-title::before {
   width: 13px;
   height: 19px;
   background: url("../../../img/svg/point-footer.svg") no-repeat;
-  top: 0;
+  top: 4px;
 }
 
 .footer__mail-title::before {
   background: url("../../../img/svg/email.svg") no-repeat;
   width: 22px;
   height: 22px;
-  top: 0px;
+  top: 3px;
 }
 
 .footer__mail-title {
@@ -113,4 +115,22 @@
     width: 100%;
   }
 
+  .footer__address-title,
+  .footer__mail-title,
+  .footer__social-title {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+
+  .footer__address-wrap,
+  .footer__mail-wrap {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__address-wrap,
+  .footer__mail-wrap {
+    font-size: 18px;
+  }
 }

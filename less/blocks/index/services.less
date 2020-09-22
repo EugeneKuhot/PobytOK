@@ -53,7 +53,7 @@
 
 .services__item {
   display: block;
-  width: 155px;
+  width: 25%;
   height: 175px;
   margin-bottom: 45px;
 }
@@ -73,7 +73,8 @@
   position: absolute;
   top: 0;
   left: calc(50% - 65px);
-  background: url("../../../img/svg/service-ring.svg");
+  background: url("../../../img/svg/service-ring.svg") no-repeat;
+  background-size: contain;
 }
 
 .services__link-icon {
@@ -92,13 +93,14 @@
 }
 
 .services__title {
-  font-size: 16px;
+  font-family: "Cuprum-Regular", "Arial", sans-serif;
+  font-size: 20px;
   line-height: 30px;
   text-align: center;
   color: #063453;
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1150px) {
   .services {
     flex-direction: column;
   }
@@ -157,7 +159,8 @@
   }
 
   .services__title {
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 400;
   }
 
   .services__link-icon {

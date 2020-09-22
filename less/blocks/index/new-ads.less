@@ -2,6 +2,7 @@
   background: #FFFFFF;
   padding-top: 82px;
   padding-bottom: 100px;
+  margin-top: -1px;
 }
 
 .new-ads__title {
@@ -16,6 +17,8 @@
   display: flex;
   list-style: none;
   height: 115px;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 
 .new-ads__topic-item {
@@ -81,6 +84,7 @@
 }
 
 .new-ads__topic-title {
+  font-family: "Cuprum-Regular", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -92,8 +96,6 @@
   padding-top: 65px;
   padding-bottom: 33px;
 }
-
-
 
 .new-ads__active-wrap::-webkit-scrollbar {
   width: 6px;
@@ -132,8 +134,8 @@
 }
 
 .new-ads__item {
-  width: 355px;
   height: 435px;
+  width: 24%;
   background: #FFFFFF;
   overflow: hidden;
   margin-bottom: 15px;
@@ -183,6 +185,7 @@
   z-index: 1;
   border: none;
   transition: all .3s ease;
+  padding: 0;
 }
 
 .new-ads__like-btn:hover svg path,
@@ -273,7 +276,8 @@ h3.new-ads__item-title {
 }
 
 .new-ads__money {
-  font-family: "Khula-Bold", "Arial", sans-serif;
+  font-family: "Cuprum-Regular", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-align: right;
@@ -301,6 +305,10 @@ h3.new-ads__item-title {
   color: #7B8A99;
 }
 
+.new-ads__see-all {
+  margin-left: auto;
+}
+
 .new-ads__see-all:hover,
 .new-ads__see-all:focus {
   background: #063453;
@@ -322,7 +330,7 @@ h3.new-ads__item-title {
   margin-right: 30px;
 }
 
-@media (max-width: 1850px) {
+@media (max-width: 1439px) {
   .new-ads__item {
     width: 45%;
   }
@@ -358,14 +366,19 @@ h3.new-ads__item-title {
     width: 355px;
   }
 
+  .new-ads__see-all {
+    margin-left: 0;
+  }
+
   .new-ads__active-wrap {
     overflow-x: scroll;
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 768px) {
   .new-ads__title-wrap {
-    padding-top: 33px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 }
 
@@ -408,7 +421,7 @@ h3.new-ads__item-title {
   }
 
   .new-ads__topic-title {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -416,5 +429,10 @@ h3.new-ads__item-title {
   .new-ads__title-wrap {
     padding-top: 1px;
     padding-bottom: 45px;
+  }
+
+  .new-ads__money {
+    font-family: "Cuprum-Bold", "Arial", sans-serif;
+    font-weight: 16px;
   }
 }
