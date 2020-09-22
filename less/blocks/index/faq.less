@@ -1,6 +1,11 @@
 .faq {
   padding-top: 120px;
   background-color: #FFFFFF;
+
+  width: 85%;
+  max-width: 1622px;
+  margin: 0 auto;
+  padding: 0 55px;
 }
 
 .faq__title {
@@ -9,6 +14,8 @@
   color: #3D3D3D;
   position: relative;
   padding-bottom: 50px;
+  margin-top: 0;
+  padding-top: 100px;
 }
 
 .faq__title::after {
@@ -181,6 +188,19 @@
   .faq__form-block {
     width: 100%;
   }
+
+  .faq {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1622px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .faq__questions-block,
+  .faq__title {
+    padding: 55px 55px 50px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -189,9 +209,9 @@
     padding-bottom: 55px;
   }
 
- .faq__see-all {
-   display: block;
- }
+  .faq__see-all {
+    display: block;
+  }
 
   .js-mobile-hidden {
     display: none;
@@ -215,6 +235,10 @@
 
   .faq {
     padding-top: 55px;
+  }
+
+  .faq__questions-block {
+    padding: 0 15px;
   }
 
   .faq__form-title {
