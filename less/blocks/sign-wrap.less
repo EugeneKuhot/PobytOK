@@ -17,9 +17,31 @@
 }
 
 .sign-wrap__item button {
+  background: #F2F4F5;
+}
+
+button.sign-wrap__active-btn {
+  background: #fff;
+}
+
+.sign-wrap__item button {
   width: 100%;
   height: 115px;
   border: none;
-  background-color: #FFFFFF;
 }
 
+.sign-wrap__btn-text {
+  text-transform: uppercase;
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.sign-wrap__btn-text.login-btn,
+.sign-wrap__btn-text.registration-btn {
+  padding-left: 35px;
+}
+
+.sign-wrap__btn-text.login-btn::before,
+.sign-wrap__btn-text.registration-btn::before {
+  left: 0;
+}

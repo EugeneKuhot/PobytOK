@@ -59,7 +59,7 @@
 
   <section class="greetings">
     <div class="greetings__container container">
-      <h2 class="greetings__title">Портал один - решений много</h2>
+      <h2 class="greetings__title">Портал один - <br>решений много</h2>
     </div>
   </section>
 
@@ -135,13 +135,13 @@
         </a>
       </li>
       <li class="services__item">
-        <a href="https://blog.pobytok.pl" class="services__link">
+        <a href="https://blog.pobytok.pl" class="services__link" target="_blank">
           <img src="img/svg/blog.svg" class="services__link-icon">
           <h3 class="services__title">БЛОГ</h3>
         </a>
       </li>
       <li class="services__item">
-        <a href="https://forum.pobytok.pl" class="services__link">
+        <a href="https://forum.pobytok.pl" class="services__link" target="_blank">
           <img src="img/svg/forum.svg" class="services__link-icon">
           <h3 class="services__title">ФОРУМ</h3>
         </a>
@@ -929,15 +929,19 @@
   <span class="scrollToTop__pic"></span>
 </div>
 
-<!--<section class="overlay">
+<!--<section class="overlay sign-overlay">
 
   <div class="sign-wrap">
     <ul class="sign-wrap__list">
-      <li class="sign-wrap__item login-btn">
-        <button>Вход</button>
+      <li class="sign-wrap__item">
+        <button class="sign-wrap__login-btn sign-wrap__active-btn">
+          <span class="sign-wrap__btn-text login-btn">Вход</span>
+        </button>
       </li>
-      <li class="sign-wrap__item registration-btn">
-        <button>Регистрация</button>
+      <li class="sign-wrap__item">
+        <button class="sign-wrap__reg-btn">
+          <span class="sign-wrap__btn-text registration-btn">Регистрация</span>
+        </button>
       </li>
     </ul>
 
@@ -966,6 +970,7 @@
 <script src="js/index-add-scripts.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/goup.js"></script>
+<script src="js/sign-in-popup.js"></script>
 
 </body>
 </html>

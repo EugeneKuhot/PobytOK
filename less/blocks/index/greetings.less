@@ -14,13 +14,15 @@
 
 .greetings__container--onload {
   background: url("../../../img/svg/ok.svg") no-repeat 85%,
-              url("../../../img/svg/Ellipse.svg") no-repeat center;
+              url("../../../img/svg/Ellipse.svg") no-repeat center top;
+  background-size: 60%;
+
 }
 
 .greetings__title {
   font-family: "Khula-Extra-Bold", "Arial", sans-serif;
   margin: 0 auto;
-  width: 61%;
+  width: 60%;
   max-width: 535px;
   font-size: 60px;
   line-height: 78px;
@@ -34,18 +36,27 @@
     min-height: 400px;
     background-size: 60%;
   }
+
+  .greetings__title {
+    width: 65%;
+  }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 955px) {
   .greetings__container--onload {
     min-height: 350px;
     background: url("../../../img/svg/ok.svg") no-repeat 75%,
                 url("../../../img/svg/Ellipse.svg") no-repeat top center;
     background-size: 60%;
   }
+
+  .greetings__title {
+    font-size: 45px;
+    width: 70%;
+  }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 875px) {
   .greetings__container--onload {
     min-height: 250px;
     background: url("../../../img/svg/ok.svg") no-repeat 75%,
@@ -59,12 +70,22 @@
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 750px) {
   .greetings__container--onload {
     min-height: 200px;
     background: url('../../../img/svg/ok.svg') no-repeat 65%,
                 url('../../../img/svg/Ellipse.svg') no-repeat top center;
     background-size: 50%;
+  }
+
+  .greetings__title {
+    width: 60%;
+  }
+}
+
+@media (max-width: 750px) {
+  .greetings__title {
+    width: 73%;
   }
 }
 
@@ -72,6 +93,7 @@
   .greetings__title {
     font-size: 18px;
     line-height: 28px;
+    width: 48%;
   }
 
   .greetings__container--onload {
