@@ -2,12 +2,12 @@
   max-width: 766px;
   width: 45%;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 .sign-wrap__list {
   list-style: none;
   padding: 0;
-  height: 115px;
   display: flex;
   align-items: center;
 }
@@ -17,6 +17,9 @@
 }
 
 .sign-wrap__item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #F2F4F5;
 }
 
@@ -44,4 +47,88 @@ button.sign-wrap__active-btn {
 .sign-wrap__btn-text.login-btn::before,
 .sign-wrap__btn-text.registration-btn::before {
   left: 0;
+  top: 0;
+}
+
+.sign-wrap__btn {
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  position: absolute;
+  height: 35px;
+  width: 110px;
+  top: 40px;
+  right: -110px;
+  transform: rotate(-90deg);
+  border: none;
+  background: url("../../img/svg/close.svg") no-repeat right;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sign-overlay {
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.sign-overlay--open {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.sign-wrap__item.login-btn::before {
+  left: 102px;
+}
+
+.sign-wrap__btn-text {
+  color: #063453;
+}
+
+.sign-wrap__btn-text.login-btn:hover,
+.sign-wrap__btn-text.login-btn:focus,
+.sign-wrap__btn-text.registration-btn:hover,
+.sign-wrap__btn-text.registration-btn:focus {
+  color: #063453;
+}
+
+@media (max-width: 850px) {
+  .sign-wrap {
+    width: 60%;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .sign-wrap {
+    width: 75%;
+  }
+
+  .sign-wrap__btn-text,
+  .sign-wrap__btn {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .sign-wrap__btn-text.login-btn,
+  .sign-wrap__btn-text.registration-btn {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .sign-wrap__btn-text.login-btn::before,
+  .sign-wrap__btn-text.registration-btn::before {
+    left: calc(50% - 10px);
+  }
+
+  .sign-wrap__btn {
+    height: 25px;
+    width: 90px;
+    background-size: contain;
+    overflow: hidden;
+    top: 35px;
+    right: -60px;
+  }
 }
