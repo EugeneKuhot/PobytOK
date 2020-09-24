@@ -92,11 +92,17 @@ button.sign-wrap__active-btn {
   color: #063453;
 }
 
-.sign-wrap__btn-text.login-btn:hover,
-.sign-wrap__btn-text.login-btn:focus,
-.sign-wrap__btn-text.registration-btn:hover,
-.sign-wrap__btn-text.registration-btn:focus {
-  color: #063453;
+.sign-wrap__login-btn .login-btn,
+.sign-wrap__reg-btn .registration-btn {
+  transition: all .3s ease;
+}
+
+.sign-wrap__login-btn:hover .login-btn,
+.sign-wrap__login-btn:focus .login-btn,
+.sign-wrap__reg-btn:hover .registration-btn,
+.sign-wrap__reg-btn:focus .registration-btn {
+  color: #77CCF9;
+  transition: all .3s ease;
 }
 
 @media (max-width: 990px) {

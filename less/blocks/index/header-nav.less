@@ -79,6 +79,18 @@
   left: 30px;
   width: 20px;
   height: 20px;
+  top: 17px;
+}
+
+.header-nav__link.user-name {
+  max-width: 375px;
+}
+
+.header-nav__link.user-name span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 @media (max-width: 995px) {
@@ -129,6 +141,11 @@
     width: 16px;
     height: 16px;
     left: calc(50% - 8px);
+  }
+
+  .header-nav__link.user-name::before {
+    left: calc(50% - 10px);
+    top: 8px;
   }
 
   .login-btn::before {
