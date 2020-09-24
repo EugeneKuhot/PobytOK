@@ -3,6 +3,8 @@
   width: 45%;
   background-color: #FFFFFF;
   position: relative;
+  margin: 10% auto;
+  border-radius: 1px;
 }
 
 .sign-wrap__list {
@@ -10,10 +12,13 @@
   padding: 0;
   display: flex;
   align-items: center;
+  border-radius: 1px 1px;
+  overflow: hidden;
 }
 
 .sign-wrap__item {
   width: 50%;
+  border-radius: 1px;
 }
 
 .sign-wrap__item button {
@@ -94,16 +99,16 @@ button.sign-wrap__active-btn {
   color: #063453;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 990px) {
   .sign-wrap {
-    width: 60%;
+    width: 65%;
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 690px) {
 
   .sign-wrap {
-    width: 75%;
+    width: 80%;
   }
 
   .sign-wrap__btn-text,
@@ -130,5 +135,9 @@ button.sign-wrap__active-btn {
     overflow: hidden;
     top: 35px;
     right: -60px;
+  }
+
+  .sign-wrap__item button {
+    height: 75px;
   }
 }

@@ -14,18 +14,29 @@
 
   signCloseBtn.addEventListener('click', closePopup);
 
-
   const loginBtn = document.querySelector('.sign-wrap__login-btn');
   const regBtn = document.querySelector('.sign-wrap__reg-btn');
   const loginWrap = document.querySelector('.log-in-form');
   const regWrap = document.querySelector('.registration-form');
 
+  let secondFormEmployer = document.querySelector('.form-employer');
+  let secondFormAgency = document.querySelector('.form-agency');
+  let secondFormForeigner = document.querySelector('.form-foreigner');
+  let secondFormUserFirm = document.querySelector('.form-user-firm');
+  let secondFormUser = document.querySelector('.form-user');
+
+
+
   function getSignWrap (wrap, signBtn) {
     signOverlay.classList.add('sign-overlay--open');
-
-    loginWrap.classList.add('visually-hidden');
-    regWrap.classList.add('visually-hidden');
-    wrap.classList.remove('visually-hidden');
+    secondFormEmployer.classList.add('hidden');
+    secondFormAgency.classList.add('hidden');
+    secondFormForeigner.classList.add('hidden');
+    secondFormUserFirm.classList.add('hidden');
+    secondFormUser.classList.add('hidden');
+    loginWrap.classList.add('hidden');
+    regWrap.classList.add('hidden');
+    wrap.classList.remove('hidden');
 
     loginBtn.classList.remove('sign-wrap__active-btn');
     regBtn.classList.remove('sign-wrap__active-btn');
