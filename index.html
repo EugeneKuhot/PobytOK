@@ -961,13 +961,17 @@
     <form class="log-in-form">
       <p class="log-in-form__text">Для входа в личный кабинет Вам необходимо ввести логин и пароль</p>
 
-      <input type="email" placeholder="E-mail или номер телефона" required>
-      <input type="password" placeholder="••••••••" required>
+      <label for="login-email" class="field-label">Адрес электронной почты или номер телефона</label>
+      <input type="email" id="login-email" placeholder="pobytok@gmail.com / +48 1234567..." required>
+
+      <label for="login-password" class="field-label">Пароль</label>
+      <input type="password" id="login-password" placeholder="••••••••" required>
 
       <input type="checkbox" id="remember" checked>
       <label for="remember" class="log-in-form__remember">Запомнить меня</label>
 
-      <input type="submit" value="Войти" class="">
+      <input type="submit" value="Войти" class="submit-btn">
+      <a href="#" class="log-in-form__forget-password-link">Забыли пароль?</a>
 
     </form>
 
@@ -979,36 +983,36 @@
       <p class="registration-form__add-text">Введенные данные будут проверены. Убедитесь, что вы выбрали правильный тип
         регистрации.</p>
 
-      <div class="registration-form__select-wrap select-wrap">
-        <div class="select__header">
-          <input type="text" class="registration-form__select select" placeholder="Тип регистрации пользователя"
+      <div class="registration-form__select-wrap registration-select-wrap">
+        <div class="registration-select__header">
+          <input type="text" class="registration-form__select registration-select" placeholder="Тип регистрации пользователя"
                  readonly>
-          <span class="select__icon"></span>
+          <span class="registration-select__icon"></span>
         </div>
 
-        <ul class="registration-form__select-list select__body">
+        <ul class="registration-form__select-list registration-select__body">
           <li class="registration-form__select-item employer-item">Работодатель</li>
           <li class="registration-form__employ-wrap hidden">
             <ul class="registration-form__employ-list">
               <li class="registration-form__employ-item"><input type="radio" id="employer"
                                                                 name="employer-type">
-                <label for="employer" class="registration-form__label select-item">Прямой работодатель</label>
+                <label for="employer" class="registration-form__label registration-select-item">Прямой работодатель</label>
               </li>
               <li class="registration-form__employ-item"><input type="radio" id="agency"
                                                                 name="employer-type"><label
-                for="agency" class="registration-form__label select-item">Агентство по трудоустройству</label>
+                for="agency" class="registration-form__label registration-select-item">Агентство по трудоустройству</label>
               </li>
             </ul>
           </li>
-          <li class="registration-form__select-item foreign-item select-item">Иностранец</li>
+          <li class="registration-form__select-item foreign-item registration-select-item">Иностранец</li>
           <li class="registration-form__select-item user-item">Общий пользователь</li>
           <li class="registration-form__user-wrap hidden">
             <ul class="registration-form__user-list">
               <li class="registration-form__user-item"><input type="radio" id="firm" name="user-type"><label
-                for="firm" class="registration-form__label select-item">Юридическое лицо</label>
+                for="firm" class="registration-form__label registration-select-item">Юридическое лицо</label>
               </li>
               <li class="registration-form__user-item"><input type="radio" id="user" name="user-type"><label
-                for="user" class="registration-form__label select-item">Физическое лицо</label>
+                for="user" class="registration-form__label registration-select-item">Физическое лицо</label>
               </li>
             </ul>
           </li>
@@ -1063,7 +1067,7 @@
 
       <div class="second-reg-form__submit-wrap">
         <button type="reset" class="reg-reset-btn">Отменить</button>
-        <button type="submit" class="reg-submit-btn">Войти</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
       </div>
 
     </form>
@@ -1105,7 +1109,7 @@
 
       <div class="second-reg-form__submit-wrap">
         <button type="reset" class="reg-reset-btn">Отменить</button>
-        <button type="submit" class="reg-submit-btn">Войти</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
       </div>
 
     </form>
@@ -1148,7 +1152,7 @@
 
       <div class="second-reg-form__submit-wrap">
         <button type="reset" class="reg-reset-btn">Отменить</button>
-        <button type="submit" class="reg-submit-btn">Войти</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
       </div>
 
     </form>
@@ -1185,7 +1189,7 @@
 
       <div class="second-reg-form__submit-wrap">
         <button type="reset" class="reg-reset-btn">Отменить</button>
-        <button type="submit" class="reg-submit-btn">Войти</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
       </div>
 
     </form>
@@ -1223,7 +1227,7 @@
 
       <div class="second-reg-form__submit-wrap">
         <button type="reset" class="reg-reset-btn">Отменить</button>
-        <button type="submit" class="reg-submit-btn">Войти</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
       </div>
 
     </form>
@@ -1238,6 +1242,7 @@
 <script src="js/goup.js"></script>
 <script src="js/sign-in-popup.js"></script>
 <script src="js/registration-type.js"></script>
+<script src="js/select.js"></script>
 
 </body>
 </html>

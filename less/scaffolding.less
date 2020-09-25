@@ -98,8 +98,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="tel"],
-input[type="submit"],
-.submit-btn {
+input[type="submit"] {
   margin-bottom: 25px;
   background: #F2F4F5;
   border-radius: 8px;
@@ -114,6 +113,11 @@ input[type="submit"],
   transition: all .3s ease;
   text-transform: uppercase;
   font-family: "Cuprum-Bold", "Arial", sans-serif;
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 input[type="submit"]:hover,
@@ -201,6 +205,16 @@ input[type="password"] {
 button,
 input[type="submit"] {
   cursor: pointer;
+}
+
+@media (max-width: 995px) {
+  input[type="submit"],
+  .submit-btn {
+    padding: 12px!important;
+    font-size: 16px!important;
+    line-height: 30px;
+  }
+
 }
 
 @media (max-width: 549px) {

@@ -1,9 +1,11 @@
-.select__header {
+.select__header,
+.registration-select__header {
   display: flex;
   position: relative;
 }
 
-.select__icon {
+.select__icon,
+.registration-select__icon {
   width: 25px;
   height: 10px;
   background: url("../img/svg/select-arrow.svg") no-repeat;
@@ -20,17 +22,20 @@
   transform-origin: center;
 }
 
-input.select {
+input.select,
+input.registration-select {
   width: 100%;
   margin-bottom: 0;
   cursor: pointer;
 }
 
-input.select::placeholder {
+input.select::placeholder,
+input.registration-select::placeholder {
   color: #464646;
 }
 
-.select__body {
+.select__body,
+.registration-select__body {
   display: none;
   padding: 0;
   position: relative;
@@ -44,14 +49,44 @@ input.select::placeholder {
   transition: all 1s ease;
 }
 
-.select-wrap.is-active .select__body{
+.select-item {
+  transition: all .3s ease;
+}
+
+.select-item:hover {
+  background-color: #DFE5EC;
+  transition: all .3s ease;
+}
+
+.select-wrap.is-active .select__body,
+.registration-select-wrap.is-active .registration-select__body {
   display: block;
   top: 0;
   opacity: 1;
   transition: all 1s ease;
 }
 
-.select__body > li {
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap.is-active .select__body {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 75px;
+}
+
+.select__body .select-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.select__body .select-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.select__body > li,
+.registration-select__body > li {
   height: 55px;
   display: flex;
   align-items: center;
@@ -64,7 +99,8 @@ input.select::placeholder {
 }
 
 
-.select__body::after {
+.select__body::after,
+.registration-select__body::after {
   content: '';
   position: absolute;
   top: -5px;

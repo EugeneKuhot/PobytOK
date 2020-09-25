@@ -4,7 +4,7 @@
 
   let registrationWrap = document.querySelector('.registration-form');
   let registrationInput = registrationWrap.querySelector('.registration-form__select');
-  let registrationSelectHeader = registrationWrap.querySelector('.select__header');
+  let registrationSelectHeader = registrationWrap.querySelector('.registration-select__header');
   let userTypeList = document.querySelector('.registration-form__select-list');
 
   let employerItem = userTypeList.querySelector('.employer-item');
@@ -18,7 +18,7 @@
   let userDescWrap = document.querySelector('.registration-form__user');
   let userWrap = userTypeList.querySelector('.registration-form__user-wrap');
 
-  let allUserTypes = userTypeList.querySelectorAll('.select-item');
+  let allUserTypes = userTypeList.querySelectorAll('.registration-select-item');
 
   allUserTypes.forEach(el => el.addEventListener('click', function () {
     registrationInput.value = el.textContent;
@@ -52,7 +52,7 @@
 
   function getUsersList() {
     userTypeList.parentElement.classList.toggle('is-active');
-    let icon = this.querySelector('.select__icon');
+    let icon = this.querySelector('.registration-select__icon');
     icon.classList.toggle('arrow-up')
   }
 

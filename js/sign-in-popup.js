@@ -10,6 +10,8 @@
   function closePopup () {
     signOverlay.classList.remove('sign-overlay--open');
     signOverlay.classList.add('visually-hidden');
+    regBtnHeader.classList.remove('sign-in-active-btn-registration');
+    loginBtnHeader.classList.remove('sign-in-active-btn');
   }
 
   signCloseBtn.addEventListener('click', closePopup);
@@ -61,16 +63,24 @@
   };
 
   regBtnHeader.addEventListener('click', function () {
-    getSignPopup(regWrap, regBtn)
+    getSignPopup(regWrap, regBtn);
+    regBtnHeader.classList.add('sign-in-active-btn-registration');
+    loginBtnHeader.classList.remove('sign-in-active-btn');
   });
   loginBtnHeader.addEventListener('click', function () {
-    getSignPopup(loginWrap, loginBtn)
+    getSignPopup(loginWrap, loginBtn);
+    regBtnHeader.classList.remove('sign-in-active-btn-registration');
+    loginBtnHeader.classList.add('sign-in-active-btn');
   });
   loginBtn.addEventListener('click', function () {
-    getSignWrap(loginWrap, loginBtn)
+    getSignWrap(loginWrap, loginBtn);
+    regBtnHeader.classList.remove('sign-in-active-btn-registration');
+    loginBtnHeader.classList.add('sign-in-active-btn');
   });
   regBtn.addEventListener('click', function () {
-    getSignWrap(regWrap, regBtn)
+    getSignWrap(regWrap, regBtn);
+    regBtnHeader.classList.add('sign-in-active-btn-registration');
+    loginBtnHeader.classList.remove('sign-in-active-btn');
   });
 
 })();

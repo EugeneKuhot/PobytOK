@@ -3,7 +3,7 @@
   width: 45%;
   background-color: #FFFFFF;
   position: relative;
-  margin: 10% auto;
+  margin: 11% auto;
   border-radius: 1px;
 }
 
@@ -63,7 +63,7 @@ button.sign-wrap__active-btn {
   position: absolute;
   height: 35px;
   width: 110px;
-  top: 40px;
+  top: 37px;
   right: -110px;
   transform: rotate(-90deg);
   border: none;
@@ -72,6 +72,7 @@ button.sign-wrap__active-btn {
   padding: 0;
   display: flex;
   align-items: flex-end;
+  color: #063453;
 }
 
 .sign-overlay {
@@ -101,24 +102,48 @@ button.sign-wrap__active-btn {
 .sign-wrap__login-btn:focus .login-btn,
 .sign-wrap__reg-btn:hover .registration-btn,
 .sign-wrap__reg-btn:focus .registration-btn {
-  color: #77CCF9;
+  color: #063453;
   transition: all .3s ease;
 }
 
-@media (max-width: 990px) {
+.sign-in-active-btn {
+  color: #77ccf9;
+  transition: all .3s ease;
+}
+
+.header-nav__link.registration-btn.sign-in-active-btn-registration {
+  color: #77ccf9;
+  border: 2px solid #77ccf9;
+}
+
+@media (max-width: 995px) {
   .sign-wrap {
-    width: 65%;
+    width: 90%;
+    min-height: 100vh;
+    margin: 90px auto 0;
   }
+
+  .sign-in-active-btn {
+    color: #063453;
+  }
+
+  .sign-wrap__btn {
+    right: calc(50% - 45px);
+    top: -30px;
+    transform: none;
+    height: 23px;
+    width: 90px;
+    font-size: 16px;
+    line-height: 18px;
+    background-size: contain;
+  }
+
+
 }
 
 @media (max-width: 690px) {
 
-  .sign-wrap {
-    width: 80%;
-  }
-
-  .sign-wrap__btn-text,
-  .sign-wrap__btn {
+  .sign-wrap__btn-text {
     font-size: 16px;
     padding-top: 20px;
   }
@@ -132,15 +157,6 @@ button.sign-wrap__active-btn {
   .sign-wrap__btn-text.login-btn::before,
   .sign-wrap__btn-text.registration-btn::before {
     left: calc(50% - 10px);
-  }
-
-  .sign-wrap__btn {
-    height: 25px;
-    width: 90px;
-    background-size: contain;
-    overflow: hidden;
-    top: 35px;
-    right: -60px;
   }
 
   .sign-wrap__item button {
