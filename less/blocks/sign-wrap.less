@@ -44,17 +44,6 @@ button.sign-wrap__active-btn {
   font-size: 18px;
 }
 
-.sign-wrap__btn-text.login-btn,
-.sign-wrap__btn-text.registration-btn {
-  padding-left: 35px;
-}
-
-.sign-wrap__btn-text.login-btn::before,
-.sign-wrap__btn-text.registration-btn::before {
-  left: 0;
-  top: 0;
-}
-
 .sign-wrap__btn {
   font-family: "Cuprum-Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -85,10 +74,6 @@ button.sign-wrap__active-btn {
   transition: all .3s ease;
 }
 
-.sign-wrap__item.login-btn::before {
-  left: 102px;
-}
-
 .sign-wrap__btn-text {
   color: #063453;
 }
@@ -106,7 +91,7 @@ button.sign-wrap__active-btn {
   transition: all .3s ease;
 }
 
-.sign-in-active-btn {
+.header-nav__link.login-btn.sign-in-active-btn {
   color: #77ccf9;
   transition: all .3s ease;
 }
@@ -138,28 +123,32 @@ button.sign-wrap__active-btn {
     background-size: contain;
   }
 
+  .sign-wrap .message-icon-mobile,
+  .sign-wrap .registration-btn--icon-mobile,
+  .sign-wrap .login-btn--icon {
+    margin-right: 15px;
+  }
 
 }
 
 @media (max-width: 690px) {
 
+  .sign-wrap__reg-btn,
+  .sign-wrap__login-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
   .sign-wrap__btn-text {
     font-size: 16px;
-    padding-top: 20px;
-  }
-
-  .sign-wrap__btn-text.login-btn,
-  .sign-wrap__btn-text.registration-btn {
-    padding-left: 0;
-    padding-top: 25px;
-  }
-
-  .sign-wrap__btn-text.login-btn::before,
-  .sign-wrap__btn-text.registration-btn::before {
-    left: calc(50% - 10px);
+    padding-top: 10px;
   }
 
   .sign-wrap__item button {
     height: 75px;
+  }
+
+  .sign-wrap .login-btn--icon, .sign-wrap .registration-btn--icon-mobile {
+    margin-right: 0;
   }
 }
