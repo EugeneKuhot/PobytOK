@@ -62,12 +62,23 @@
   border: none;
 }
 
+.header-nav__link.user-name:hover span {
+  color: #77CCF9;
+}
+
+.header-nav__link.user-name::after {
+  display: none;
+}
+
 .header-nav__link.user-name span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 165px;
   text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .header-nav__item--message-item {
@@ -118,17 +129,47 @@
   position: relative;
 }
 
-.header-nav__user-desktop-list {
+.header-nav__user-desktop-list.select__body {
   list-style: none;
   position: absolute;
   z-index: 5;
   width: 315px;
   top: 50px;
   left: 33px;
+  padding: 0;
+}
+
+.header-nav__user-desktop-list {
+  padding: 0;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.header-nav__user-desktop-list::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  margin: 0 auto;
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #fff;
+  border-top: 0px solid transparent;
 }
 
 .header-nav__user-desktop-list li {
   padding: 20px 30px;
+}
+
+.header-nav__user-desktop-list li:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.header-nav__user-desktop-list li:last-child {
+  border-radius: 0 0 8px 8px;
 }
 
 .header-nav__avatar-wrap {
@@ -153,6 +194,12 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #7B8A99;
 }
 
 .header-nav__user-desktop-item a {
@@ -168,8 +215,26 @@
   align-items: center;
 }
 
-@media (max-width: 995px) {
+.panel.header-nav__user-dropdown {
+  position: absolute;
+  left: 34px;
+  top: 50px;
+  z-index: 5;
+  padding: 0;
+  width: 315px;
+  background-color: transparent;
+}
 
+.header-nav__user-name-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__link.active-user span {
+  color: #77CCF9;
+}
+
+@media (max-width: 995px) {
   .message-icon-desktop,
   .registration-btn--icon {
     display: none;
@@ -293,5 +358,10 @@
 
   .header-nav__user-desktop-list {
     display: none;
+  }
+
+  .header-nav__link.user-name.active-user span,
+  .header-nav__link.user-name:hover span {
+    color: #063453;
   }
 }

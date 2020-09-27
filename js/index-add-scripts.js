@@ -18,4 +18,5 @@
     faqMobileHidden.forEach(el => el.style = "display: block");
     faqMobileShowBtn.style = "display: none";
   })
+
 })();
