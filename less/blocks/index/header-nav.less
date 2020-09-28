@@ -234,6 +234,10 @@
   color: #77CCF9;
 }
 
+.header-nav__item-user-mobile {
+  display: none;
+}
+
 @media (max-width: 995px) {
   .message-icon-desktop,
   .registration-btn--icon {
@@ -363,5 +367,33 @@
   .header-nav__link.user-name.active-user span,
   .header-nav__link.user-name:hover span {
     color: #063453;
+  }
+
+  .header-nav__item-user-mobile {
+    display: flex;
+  }
+
+  .header-nav__user-wrap {
+    display: none;
+  }
+
+  .header-nav__item-user-mobile-link {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 5px;
+  }
+
+  .header-nav__item-user-mobile-link span {
+    color: #063453;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: "Cuprum-Regular", "Arial", sans-serif;
   }
 }
