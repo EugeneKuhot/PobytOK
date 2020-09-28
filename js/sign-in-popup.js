@@ -54,12 +54,6 @@
         closePopup();
       }
     });
-
-    document.addEventListener('click', function (e) {
-      if (e.target === signOverlay) {
-        closePopup();
-      }
-    })
   };
 
   regBtnHeader.addEventListener('click', function () {

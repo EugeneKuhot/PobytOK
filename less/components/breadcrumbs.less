@@ -1,0 +1,29 @@
+.breadcrumbs {
+  list-style: none;
+  margin: 45px 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  li {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: #7B8A99;
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background: #464646;
+        border-radius: 50%;
+        margin: 0 11px;
+      }
+    }
+    a {
+      color: #464646;
+    }
+  }
+}

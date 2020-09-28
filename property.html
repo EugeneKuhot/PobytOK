@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="keywords"
+        content="Работа в Польше, Поиск Жилья в Польше, Доска объявлений в Польше, Легализация пребывания в Польше,
+        форум для русскоязычных в Польше, Новости Польши">
+  <meta name="description" content="PobytOK - Портал для иностранных граждан, пребывающих в Польше. Онлайн ресурс,
+  содержит множество полезных инструментов, которые помогут сделать пребывание иностранцев в Польше более комфортным.">
+  <title>PobytOK – Портал для иностранных граждан, пребывающих в Польше</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+<header class="page-header" id="header">
+  <h1 class="visually-hidden">Pobytok - Сервис для мигрантов в Польше</h1>
+
+  <div class="page-header__container container">
+    <div class="page-header__logo">
+      <a href="index.html">
+        <img src="img/svg/header-logo.svg" width="150" height="45" alt="PobytOK">
+      </a>
+    </div>
+
+    <div class="page-header__user-wrap">
+      <nav class="header-nav">
+        <div class="header-nav__wrapper">
+          <ul class="header-nav__list tablet-container">
+            <li class="header-nav__item header-nav__item--active">
+              <a class="header-nav__link main-btn" href="#">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M15.7313 7.15253L8.55261 0.611355C8.23752 0.324199 7.76236 0.324231 7.44739 0.611324L0.268688 7.15256C0.0162826 7.38256 -0.0670923 7.73693 0.05622 8.05534C0.179564 8.37375 0.479875 8.57946 0.821344 8.57946H1.9679V15.1332C1.9679 15.3931 2.17859 15.6038 2.43843 15.6038H6.37324C6.63308 15.6038 6.84377 15.3931 6.84377 15.1332V11.154H9.15633V15.1333C9.15633 15.3931 9.36701 15.6038 9.62686 15.6038H13.5615C13.8213 15.6038 14.032 15.3931 14.032 15.1333V8.57946H15.1788C15.5202 8.57946 15.8206 8.37371 15.9439 8.05534C16.0671 7.7369 15.9837 7.38256 15.7313 7.15253Z"
+                      fill="#77CCF9"/>
+                    <path
+                      d="M13.909 1.33545H10.749L14.3795 4.63657V1.80595C14.3795 1.54611 14.1689 1.33545 13.909 1.33545Z"
+                      fill="#77CCF9"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Главная</span>
+              </a>
+            </li>
+            <li class="header-nav__item ">
+              <a class="header-nav__link login-btn" href="#">
+                <svg class="login-btn--icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="M3.75 0V3.75001H6.24998V2.49998H16.25V17.5H6.24998V16.25H3.75V20H18.75V0H3.75Z"
+                          fill="#77CCF9"/>
+                    <path
+                      d="M6.09863 12.8662L7.8662 14.6338L12.5 10L7.86624 5.36621L6.09867 7.13378L7.71487 8.74997H1.25V11.25H7.71487L6.09863 12.8662Z"
+                      fill="#77CCF9"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Вход</span>
+              </a>
+            </li>
+            <li class="header-nav__item ">
+              <a class="header-nav__link registration-btn" href="#">
+                <svg class="registration-btn--icon" width="17" height="20" viewBox="0 0 17 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.8338 4.58339C12.8338 7.11469 10.7817 9.16661 8.25038 9.16661C5.71909 9.16661 3.66699 7.11469 3.66699 4.58339C3.66699 2.05209 5.71909 0 8.25038 0C10.7817 0 12.8338 2.05209 12.8338 4.58339Z"
+                    fill="#77CCF9"/>
+                  <path
+                    d="M12.1459 11H4.35411C1.9534 11 0 12.9534 0 15.3541V18.5625C0 18.942 0.307999 19.25 0.6875 19.25H15.8125C16.192 19.25 16.5 18.942 16.5 18.5625V15.3541C16.5 12.9534 14.5466 11 12.1459 11Z"
+                    fill="#77CCF9"/>
+                </svg>
+                <svg class="registration-btn--icon-mobile" width="14" height="16" viewBox="0 0 14 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.66688 3.80957C9.66688 5.36117 8.40901 6.619 6.85731 6.619C5.30562 6.619 4.04774 5.36117 4.04774 3.80957C4.04774 2.25792 5.30566 1 6.85731 1C8.40896 1 9.66688 2.25792 9.66688 3.80957ZM3.619 10.1428H10.0953C11.5384 10.1428 12.7143 11.3187 12.7143 12.7618V14.9999H1V12.7618C1 11.3187 2.17589 10.1428 3.619 10.1428Z"
+                    stroke="#77CCF9" stroke-width="2"/>
+                </svg>
+                <span>Регистрация</span>
+              </a>
+            </li>
+            <li class="header-nav__item header-nav__item--message-item hidden">
+              <a href="#" class="header-nav__message-btn">
+                <div class="message-count-wrap">
+                  <svg class="message-icon-desktop" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path
+                        d="M24.4782 4.64629C21.047 7.5521 15.0264 12.6643 13.2569 14.2583C13.0193 14.4734 12.7645 14.5828 12.5 14.5828C12.2361 14.5828 11.9817 14.4745 11.7447 14.2604C9.97366 12.6648 3.95305 7.5521 0.521852 4.64629C0.308229 4.46572 0.275661 4.14834 0.44861 3.92759C0.848415 3.41748 1.44451 3.125 2.08338 3.125H22.9167C23.5555 3.125 24.1516 3.41748 24.5514 3.92764C24.7243 4.14834 24.6918 4.46572 24.4782 4.64629Z"
+                        fill="#77CCF9"/>
+                      <path
+                        d="M0.302131 6.22049C0.48675 6.13456 0.703938 6.16454 0.857551 6.29579C3.10467 8.20057 6.06537 10.7173 8.29823 12.6378C8.41571 12.7386 8.48182 12.8866 8.47928 13.0417C8.47675 13.1963 8.40502 13.3423 8.28397 13.4389C6.20926 15.1006 3.08275 17.3864 0.824982 19.0109C0.734942 19.076 0.628155 19.1091 0.520831 19.1091C0.439434 19.1091 0.358087 19.0903 0.283282 19.0516C0.109307 18.9626 -1.71661e-05 18.7835 -1.71661e-05 18.5882V6.693C3.14713e-05 6.49007 0.118049 6.30545 0.302131 6.22049Z"
+                        fill="#77CCF9"/>
+                      <path
+                        d="M24.175 19.0116C21.9167 17.3871 18.7896 15.1013 16.7155 13.4396C16.5944 13.343 16.5227 13.197 16.5202 13.0424C16.5176 12.8873 16.5837 12.7393 16.7012 12.6385C18.9341 10.718 21.8954 8.20128 24.1424 6.2965C24.2971 6.16525 24.5147 6.13629 24.6979 6.2212C24.882 6.30616 25 6.49078 25 6.69371V18.589C25 18.7843 24.8906 18.9633 24.7167 19.0524C24.6419 19.091 24.5605 19.1098 24.4792 19.1098C24.3718 19.1098 24.265 19.0768 24.175 19.0116Z"
+                        fill="#77CCF9"/>
+                      <path
+                        d="M0.638348 20.4293C2.81882 18.8693 6.83547 15.961 9.23312 14.015C9.42844 13.8558 9.71125 13.8609 9.90349 14.0267C10.3739 14.4372 10.7676 14.7831 11.0469 15.0343C11.9045 15.8084 13.0946 15.8084 13.9542 15.0332C14.2324 14.7825 14.6261 14.4356 15.0966 14.0267C15.2873 13.8598 15.5706 13.8547 15.7665 14.0149C18.156 15.9543 22.1772 18.8662 24.3612 20.4292C24.4828 20.5167 24.5612 20.6515 24.5764 20.8005C24.5911 20.9496 24.5418 21.0976 24.4396 21.2074C24.0453 21.6322 23.4899 21.8758 22.9167 21.8758H2.08332C1.51008 21.8758 0.955194 21.6322 0.559978 21.2075C0.458269 21.0981 0.408417 20.9501 0.423162 20.8011C0.438446 20.6521 0.516766 20.5168 0.638348 20.4293Z"
+                        fill="#77CCF9"/>
+                    </g>
+                  </svg>
+                  <svg class="message-icon-mobile" width="22" height="16" viewBox="0 0 22 16" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M19.2422 0.382812H2.75781C1.78977 0.382812 1 1.17172 1 2.14062V13.8594C1 14.825 1.78625 15.6172 2.75781 15.6172H19.2422C20.2078 15.6172 21 14.8309 21 13.8594V2.14062C21 1.175 20.2138 0.382812 19.2422 0.382812ZM11.0373 9.51691L18.9995 1.55469H3.00621L11.0373 9.51691ZM2.17188 2.3777V13.6167L7.81559 7.97301L2.17188 2.3777ZM8.64777 8.79805L3.00051 14.4453H18.9995L13.3828 8.82863L11.4534 10.758C11.2253 10.9862 10.8556 10.987 10.6266 10.7598L8.64777 8.79805ZM14.2114 8L19.8281 13.6167V2.38328L14.2114 8Z"
+                          fill="#77CCF9" stroke="#77CCF9" stroke-width="0.7"/>
+                  </svg>
+
+                  <span class="message-count">12</span>
+                </div>
+
+                <span class="header-nav__message-btn-text">Сообщения</span>
+              </a>
+
+            </li>
+            <li class="header-nav__item header-nav__user-wrap hidden">
+              <button class="header-nav__link user-name accordion">
+                <svg class="registration-btn--icon" width="17" height="20" viewBox="0 0 17 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.8338 4.58339C12.8338 7.11469 10.7817 9.16661 8.25038 9.16661C5.71909 9.16661 3.66699 7.11469 3.66699 4.58339C3.66699 2.05209 5.71909 0 8.25038 0C10.7817 0 12.8338 2.05209 12.8338 4.58339Z"
+                    fill="#77CCF9"/>
+                  <path
+                    d="M12.1459 11H4.35411C1.9534 11 0 12.9534 0 15.3541V18.5625C0 18.942 0.307999 19.25 0.6875 19.25H15.8125C16.192 19.25 16.5 18.942 16.5 18.5625V15.3541C16.5 12.9534 14.5466 11 12.1459 11Z"
+                    fill="#77CCF9"/>
+                </svg>
+                <svg class="registration-btn--icon-mobile" width="14" height="16" viewBox="0 0 14 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.66688 3.80957C9.66688 5.36117 8.40901 6.619 6.85731 6.619C5.30562 6.619 4.04774 5.36117 4.04774 3.80957C4.04774 2.25792 5.30566 1 6.85731 1C8.40896 1 9.66688 2.25792 9.66688 3.80957ZM3.619 10.1428H10.0953C11.5384 10.1428 12.7143 11.3187 12.7143 12.7618V14.9999H1V12.7618C1 11.3187 2.17589 10.1428 3.619 10.1428Z"
+                    stroke="#77CCF9" stroke-width="2"/>
+                </svg>
+
+                <span>Andrzej Monasteretskyy</span>
+              </button>
+
+              <div class="panel header-nav__user-dropdown">
+                <ul class="header-nav__user-desktop-list">
+                  <li class="header-nav__user-name-wrap">
+                    <div class="header-nav__avatar-wrap">
+                      <img src="img/jpg/Frame%205.jpg" alt="Аватар пользователя">
+                    </div>
+
+                    <span class="header-nav__user-desktop-user-name">
+                    Andrzej Monasteretskyy
+                  </span>
+                  </li>
+                  <li class="header-nav__user-desktop-item ">
+                    <a href="#" class="header-nav__user-desktop-link">
+                      <svg class="registration-btn--icon" width="17" height="20" viewBox="0 0 17 20" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.8338 4.58339C12.8338 7.11469 10.7817 9.16661 8.25038 9.16661C5.71909 9.16661 3.66699 7.11469 3.66699 4.58339C3.66699 2.05209 5.71909 0 8.25038 0C10.7817 0 12.8338 2.05209 12.8338 4.58339Z"
+                          fill="#77CCF9"/>
+                        <path
+                          d="M12.1459 11H4.35411C1.9534 11 0 12.9534 0 15.3541V18.5625C0 18.942 0.307999 19.25 0.6875 19.25H15.8125C16.192 19.25 16.5 18.942 16.5 18.5625V15.3541C16.5 12.9534 14.5466 11 12.1459 11Z"
+                          fill="#77CCF9"/>
+                      </svg>
+                      <span>Личный кабинет</span>
+                    </a>
+                  </li>
+                  <li class="header-nav__user-desktop-item ">
+                    <a href="#" class="header-nav__user-desktop-link">
+                      <svg class="login-btn--icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path d="M16.25 0V3.75001H13.75V2.49998H3.75001V17.5H13.75V16.25H16.25V20H1.24999V0H16.25Z" fill="#77CCF9"/>
+                          <path d="M12.3486 12.8662L14.1162 14.6338L18.75 10L14.1162 5.36621L12.3487 7.13378L13.9649 8.74997H7.50001V11.25H13.9649L12.3486 12.8662Z" fill="#77CCF9"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <span>Выход</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="header-nav__item header-nav__item-user-mobile">
+              <a href="#" class="header-nav__item-user-mobile-link">
+                <svg class="registration-btn--icon-mobile" width="14" height="16" viewBox="0 0 14 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.66688 3.80957C9.66688 5.36117 8.40901 6.619 6.85731 6.619C5.30562 6.619 4.04774 5.36117 4.04774 3.80957C4.04774 2.25792 5.30566 1 6.85731 1C8.40896 1 9.66688 2.25792 9.66688 3.80957ZM3.619 10.1428H10.0953C11.5384 10.1428 12.7143 11.3187 12.7143 12.7618V14.9999H1V12.7618C1 11.3187 2.17589 10.1428 3.619 10.1428Z"
+                    stroke="#77CCF9" stroke-width="2"/>
+                </svg>
+
+                <span>Andrzej Monasteretskyy</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="page-header__language-list">
+        <li class="page-header__language-item">
+          <a href="#" class="page-header__language-link active-language">Ru</a>
+        </li>
+        <li class="page-header__language-item">
+          <a href="#" class="page-header__language-link">Pl</a>
+        </li>
+        <li class="page-header__language-item">
+          <a href="#" class="page-header__language-link">En</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+
+<footer class="footer">
+  <div class="footer__wrapper container">
+    <div class="footer__address-wrap">
+      <h4 class="footer__address-title">Адрес</h4>
+
+      <address class="footer__address">
+        WBM GROUP SP. Z O.O. SP.K.<br/>
+        NIP: 6751623940<br/>
+        ul. Rondo Mogilskie 1/522<br/>
+        31-516, Kraków
+      </address>
+    </div>
+    <div class="footer__mail-wrap">
+      <h4 class="footer__mail-title">EMAIL</h4>
+
+      <a class="footer__mail-link" href="mailto:office@pobytok.pl">office@pobytok.pl</a>
+      <a class="footer__mail-link" href="mailto:marketing@pobytok.pl">marketing@pobytok.pl</a>
+      <a class="footer__mail-link" href="mailto:support@pobytok.pl">support@pobytok.pl</a>
+    </div>
+    <div class="footer__social-wrap">
+      <h4 class="footer__social-title">Мы в соцсетях</h4>
+
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="https://twitter.com/OkPobyt" target="_blank"
+             class="footer__social-link footer__social-link--twitter">
+            <svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.8262 4.85938C19.6465 4.24414 20.3848 3.50586 20.959 2.64453C20.2207 2.97266 19.3594 3.21875 18.498 3.30078C19.4004 2.76758 20.0566 1.94727 20.3848 0.921875C19.5645 1.41406 18.6211 1.7832 17.6777 1.98828C16.8574 1.12695 15.75 0.634766 14.5195 0.634766C12.1406 0.634766 10.2129 2.5625 10.2129 4.94141C10.2129 5.26953 10.2539 5.59766 10.3359 5.92578C6.76758 5.7207 3.56836 3.99805 1.43555 1.41406C1.06641 2.0293 0.861328 2.76758 0.861328 3.58789C0.861328 5.06445 1.59961 6.37695 2.78906 7.15625C2.0918 7.11523 1.39453 6.95117 0.820312 6.62305V6.66406C0.820312 8.75586 2.29688 10.4785 4.26562 10.8887C3.9375 10.9707 3.52734 11.0527 3.1582 11.0527C2.87109 11.0527 2.625 11.0117 2.33789 10.9707C2.87109 12.6934 4.4707 13.9238 6.35742 13.9648C4.88086 15.1133 3.03516 15.8105 1.02539 15.8105C0.65625 15.8105 0.328125 15.7695 0 15.7285C1.88672 16.959 4.14258 17.6562 6.60352 17.6562C14.5195 17.6562 18.8262 11.1348 18.8262 5.43359C18.8262 5.22852 18.8262 5.06445 18.8262 4.85938Z"
+              />
+            </svg>
+            Мы в Twitter
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://www.facebook.com/service.foreigner" target="_blank"
+             class="footer__social-link footer__social-link--facebook">
+            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.375 7.5625V4.8125C12.375 4.0535 12.991 3.4375 13.75 3.4375H15.125V0H12.375C10.0966 0 8.25 1.84663 8.25 4.125V7.5625H5.5V11H8.25V22H12.375V11H15.125L16.5 7.5625H12.375Z"
+              />
+            </svg>
+            Мы в Facebook
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://www.linkedin.com/company/pobytok" target="_blank"
+             class="footer__social-link footer__social-link--linkedin">
+            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.278809 7.35559H4.9948V21.5442H0.278809V7.35559Z"/>
+              <path
+                d="M2.66792 0.515625C1.05475 0.515625 0 1.57491 0 2.96719C0 4.32877 1.02336 5.41826 2.60599 5.41826H2.6367C4.28143 5.41826 5.30496 4.32877 5.30496 2.96719C5.27425 1.57491 4.28143 0.515625 2.66792 0.515625Z"/>
+              <path
+                d="M16.5709 7.02258C14.0686 7.02258 12.9474 8.39775 12.3206 9.36472V7.35559H7.60449V21.5442H12.3205V13.6206C12.3205 13.1965 12.3512 12.773 12.4757 12.4697C12.8166 11.6226 13.5926 10.7451 14.8954 10.7451C16.6019 10.7451 17.2845 12.0462 17.2845 13.9536V21.5442H22.0002V13.4086C22.0002 9.05051 19.6735 7.02258 16.5709 7.02258Z"/>
+            </svg>
+
+            Мы в Linkedin
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://t.me/PobytOK" target="_blank" class="footer__social-link footer__social-link--telegram">
+            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.29355 12.5356L8.02979 19.3757L11.592 15.8135L17.6996 20.668L22 1.33203L0 10.4958L5.29355 12.5356ZM15.7135 6.8797L8.97963 13.0217L8.1409 16.1828L6.59151 12.3085L15.7135 6.8797Z"
+              />
+            </svg>
+            Мы в Telegram
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" target="_blank" class="footer__social-link footer__social-link--instagram">
+            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.7773 0H3.22266C1.44583 0 0 1.44583 0 3.22266V18.7773C0 20.5542 1.44583 22 3.22266 22H18.7773C20.5542 22 22 20.5542 22 18.7773V3.22266C22 1.44583 20.5542 0 18.7773 0ZM11.043 16.7578C7.84431 16.7578 5.24219 14.1557 5.24219 10.957C5.24219 7.75838 7.84431 5.15625 11.043 5.15625C14.2416 5.15625 16.8438 7.75838 16.8438 10.957C16.8438 14.1557 14.2416 16.7578 11.043 16.7578ZM17.4883 6.44531C16.4221 6.44531 15.5547 5.57788 15.5547 4.51172C15.5547 3.44556 16.4221 2.57812 17.4883 2.57812C18.5544 2.57812 19.4219 3.44556 19.4219 4.51172C19.4219 5.57788 18.5544 6.44531 17.4883 6.44531Z"
+              />
+              <path
+                d="M17.4883 3.86719C17.1326 3.86719 16.8438 4.15605 16.8438 4.51172C16.8438 4.86739 17.1326 5.15625 17.4883 5.15625C17.8439 5.15625 18.1328 4.86739 18.1328 4.51172C18.1328 4.15605 17.8439 3.86719 17.4883 3.86719Z"
+              />
+              <path
+                d="M11.043 6.44531C8.55548 6.44531 6.53125 8.46954 6.53125 10.957C6.53125 13.4445 8.55548 15.4688 11.043 15.4688C13.5305 15.4688 15.5547 13.4445 15.5547 10.957C15.5547 8.46954 13.5305 6.44531 11.043 6.44531Z"
+              />
+            </svg>
+            Мы в Instagram
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a href="#" target="_blank" class="footer__social-link footer__social-link--vk">
+            <svg id="Bold" enable-background="new 0 0 24 24" height="22" viewBox="0 0 24 24" width="22"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/>
+            </svg>
+            Мы в Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__copyright container">© 2020 PobytOK. Все права защищены.</div>
+</footer>
+
+<div id="scrollToTop" class="">
+  <span class="scrollToTop__pic"></span>
+</div>
+
+<section class="overlay sign-overlay visually-hidden">
+  <h2 class="visually-hidden">Окно регистрации</h2>
+  <div class="sign-wrap">
+    <button class="sign-wrap__btn">Закрыть</button>
+    <ul class="sign-wrap__list">
+      <li class="sign-wrap__item">
+        <button class="sign-wrap__login-btn sign-wrap__active-btn">
+          <svg class="login-btn--icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path d="M3.75 0V3.75001H6.24998V2.49998H16.25V17.5H6.24998V16.25H3.75V20H18.75V0H3.75Z"
+                    fill="#77CCF9"></path>
+              <path
+                d="M6.09863 12.8662L7.8662 14.6338L12.5 10L7.86624 5.36621L6.09867 7.13378L7.71487 8.74997H1.25V11.25H7.71487L6.09863 12.8662Z"
+                fill="#77CCF9"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="20" height="20" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+
+          <span class="sign-wrap__btn-text login-btn">Вход</span>
+        </button>
+      </li>
+      <li class="sign-wrap__item">
+        <button class="sign-wrap__reg-btn">
+          <svg class="registration-btn--icon" width="17" height="20" viewBox="0 0 17 20" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.8338 4.58339C12.8338 7.11469 10.7817 9.16661 8.25038 9.16661C5.71909 9.16661 3.66699 7.11469 3.66699 4.58339C3.66699 2.05209 5.71909 0 8.25038 0C10.7817 0 12.8338 2.05209 12.8338 4.58339Z"
+              fill="#77CCF9"/>
+            <path
+              d="M12.1459 11H4.35411C1.9534 11 0 12.9534 0 15.3541V18.5625C0 18.942 0.307999 19.25 0.6875 19.25H15.8125C16.192 19.25 16.5 18.942 16.5 18.5625V15.3541C16.5 12.9534 14.5466 11 12.1459 11Z"
+              fill="#77CCF9"/>
+          </svg>
+          <svg class="registration-btn--icon-mobile" width="14" height="16" viewBox="0 0 14 16" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.66688 3.80957C9.66688 5.36117 8.40901 6.619 6.85731 6.619C5.30562 6.619 4.04774 5.36117 4.04774 3.80957C4.04774 2.25792 5.30566 1 6.85731 1C8.40896 1 9.66688 2.25792 9.66688 3.80957ZM3.619 10.1428H10.0953C11.5384 10.1428 12.7143 11.3187 12.7143 12.7618V14.9999H1V12.7618C1 11.3187 2.17589 10.1428 3.619 10.1428Z"
+              stroke="#77CCF9" stroke-width="2"/>
+          </svg>
+
+          <span class="sign-wrap__btn-text registration-btn">Регистрация</span>
+        </button>
+      </li>
+    </ul>
+
+    <form class="log-in-form">
+      <p class="log-in-form__text">Для входа в личный кабинет Вам необходимо ввести логин и пароль</p>
+
+      <label for="login-email" class="field-label">Адрес электронной почты или номер телефона</label>
+      <input type="email" id="login-email" placeholder="Name@domain.com / +48 (954) 285 295" required>
+
+      <label for="login-password" class="field-label">Пароль</label>
+      <input type="password" id="login-password" placeholder="••••••••" required>
+
+      <input type="checkbox" id="remember" checked>
+      <label for="remember" class="log-in-form__remember">Запомнить меня</label>
+
+      <input type="submit" value="Войти" class="submit-btn">
+      <a href="#" class="log-in-form__forget-password-link">Забыли пароль?</a>
+
+    </form>
+
+    <div class="registration-form hidden">
+      <p class="registration-form__text"><span class="registration-form__attention">Внимание!</span> Для каждого типа
+        зарегистрированного пользователя доступны разные услуги сервиса. После регистрации все доступные услуги
+        отобразятся в панели пользователя.</p>
+
+      <p class="registration-form__add-text">Введенные данные будут проверены. Убедитесь, что вы выбрали правильный тип
+        регистрации.</p>
+
+      <div class="registration-form__select-wrap registration-select-wrap">
+        <div class="registration-select__header">
+          <input type="text" class="registration-form__select registration-select"
+                 placeholder="Тип регистрации пользователя"
+                 readonly>
+          <span class="registration-select__icon"></span>
+        </div>
+
+        <ul class="registration-form__select-list registration-select__body">
+          <li class="registration-form__select-item employer-item">Работодатель</li>
+          <li class="registration-form__employ-wrap hidden">
+            <ul class="registration-form__employ-list">
+              <li class="registration-form__employ-item"><input type="radio" id="employer"
+                                                                name="employer-type">
+                <label for="employer" class="registration-form__label registration-select-item">Прямой
+                  работодатель</label>
+              </li>
+              <li class="registration-form__employ-item"><input type="radio" id="agency"
+                                                                name="employer-type"><label
+                for="agency" class="registration-form__label registration-select-item">Агентство по
+                трудоустройству</label>
+              </li>
+            </ul>
+          </li>
+          <li class="registration-form__select-item foreign-item registration-select-item">Иностранец</li>
+          <li class="registration-form__select-item user-item">Общий пользователь</li>
+          <li class="registration-form__user-wrap hidden">
+            <ul class="registration-form__user-list">
+              <li class="registration-form__user-item"><input type="radio" id="firm" name="user-type"><label
+                for="firm" class="registration-form__label registration-select-item">Юридическое лицо</label>
+              </li>
+              <li class="registration-form__user-item"><input type="radio" id="user" name="user-type"><label
+                for="user" class="registration-form__label registration-select-item">Физическое лицо</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <p class="registration-form__employ registration-form__desc hidden">
+          Поиск работников, сотрудничество в HR организациями, размещение рекламы, размещение объявлений...</p>
+        <p class="registration-form__foreign registration-form__desc hidden">
+          Поиск работы, жилья, решение задач, связанных с легальным пребыванием...</p>
+        <p class="registration-form__user registration-form__desc hidden">
+          Размещение рекламы, объявлений, продвижение услуг...</p>
+      </div>
+
+      <button class="submit-btn js--first-form-submit">Далее</button>
+
+    </div>
+
+    <form action="#" method="POST" class="second-reg-form form-agency hidden">
+
+      <p class="second-reg-form__text">Для регистрации на сайте Вам необходимо заполнить следующие данные</p>
+
+      <label for="agency-name" class="field-label">Название фирмы</label>
+      <input type="text" required id="agency-name" placeholder="Firma Sp. z o.o.">
+
+
+      <label for="agency-contact-person" class="field-label">Контактное лицо</label>
+      <input type="text" required id="agency-contact-person" placeholder="Andrzej Abramowski">
+
+
+      <label for="agency-phone-number" class="field-label">Номер телефона</label>
+      <input type="tel" required id="agency-phone-number" placeholder="+48 954 285 295">
+
+
+      <label for="agency-mail" class="field-label">Адрес e-mail</label>
+      <input type="email" required id="agency-mail" placeholder="andrzej@gmail.com">
+
+
+      <label for="agency-password" class="field-label">Пароль</label>
+      <input type="password" required id="agency-password" placeholder="••••••••">
+
+      <div class="policy-check-wrap">
+        <input type="checkbox" class="policy-check" id="agency-policy" required checked>
+        <label for="agency-policy" class="second-reg-form__policy-desc">Я принимаю
+          <a href="#" class="second-reg-form__policy-link" target="_blank">правила и условия пользовательского
+            соглашения</a>
+        </label>
+      </div>
+
+      <div class="second-reg-form__recaptcha">
+        <img src="img/jpg/reCAPTCHA.jpg" alt="" style="width: 100%;">
+      </div>
+
+      <div class="second-reg-form__submit-wrap">
+        <button type="reset" class="reg-reset-btn">Отменить</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
+      </div>
+
+    </form>
+
+    <form action="#" method="POST" class="second-reg-form form-employer hidden">
+
+      <p class="second-reg-form__text">Для регистрации на сайте Вам необходимо заполнить следующие данные</p>
+
+      <label for="employer-name" class="field-label">Название фирмы</label>
+      <input type="text" required id="employer-name" placeholder="Firma Sp. z o.o.">
+
+
+      <label for="employer-contact-person" class="field-label">Контактное лицо</label>
+      <input type="text" required id="employer-contact-person" placeholder="Andrzej Abramowski">
+
+
+      <label for="employer-phone-number" class="field-label">Номер телефона</label>
+      <input type="tel" required id="employer-phone-number" placeholder="+48 954 285 295">
+
+
+      <label for="employer-mail" class="field-label">Адрес e-mail</label>
+      <input type="email" required id="employer-mail" placeholder="andrzej@gmail.com">
+
+
+      <label for="employer-password" class="field-label">Пароль</label>
+      <input type="password" required id="employer-password" placeholder="••••••••">
+
+      <div class="policy-check-wrap">
+        <input type="checkbox" class="policy-check" id="employer-policy" required checked>
+        <label for="employer-policy" class="second-reg-form__policy-desc">Я принимаю
+          <a href="#" class="second-reg-form__policy-link" target="_blank">правила и условия пользовательского
+            соглашения</a>
+        </label>
+      </div>
+
+      <div class="second-reg-form__recaptcha">
+        <img src="img/jpg/reCAPTCHA.jpg" alt="" style="width: 100%;">
+      </div>
+
+      <div class="second-reg-form__submit-wrap">
+        <button type="reset" class="reg-reset-btn">Отменить</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
+      </div>
+
+    </form>
+
+    <form action="#" method="POST" class="second-reg-form form-user-firm hidden">
+
+      <p class="second-reg-form__text">Для регистрации на сайте Вам необходимо заполнить следующие данные</p>
+
+      <label for="user-firm-name" class="field-label">Название фирмы</label>
+      <input type="text" required id="user-firm-name" placeholder="Firma Sp. z o.o.">
+
+
+      <label for="user-firm-contact-person" class="field-label">Контактное лицо</label>
+      <input type="text" required id="user-firm-contact-person" placeholder="Andrzej Abramowski">
+
+
+      <label for="user-firm-phone-number" class="field-label">Номер телефона</label>
+      <input type="tel" required id="user-firm-phone-number" placeholder="+48 954 285 295">
+
+
+      <label for="user-firm-mail" class="field-label">Адрес e-mail</label>
+      <input type="email" required id="user-firm-mail" placeholder="andrzej@gmail.com">
+
+
+      <label for="user-firm-password" class="field-label">Пароль</label>
+      <input type="password" required id="user-firm-password" placeholder="••••••••">
+
+      <div class="policy-check-wrap">
+        <input type="checkbox" class="policy-check" id="user-firm-policy" required checked>
+        <label for="user-firm-policy" class="second-reg-form__policy-desc">Я принимаю
+          <a href="#" class="second-reg-form__policy-link" target="_blank">правила и условия пользовательского
+            соглашения</a>
+        </label>
+      </div>
+
+      <div class="second-reg-form__recaptcha">
+        <img src="img/jpg/reCAPTCHA.jpg" alt="" style="width: 100%;">
+      </div>
+
+
+      <div class="second-reg-form__submit-wrap">
+        <button type="reset" class="reg-reset-btn">Отменить</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
+      </div>
+
+    </form>
+
+    <form action="#" method="POST" class="second-reg-form form-user hidden">
+
+      <p class="second-reg-form__text">Для регистрации на сайте Вам необходимо заполнить следующие данные</p>
+
+      <label for="user-contact-person" class="field-label">Контактное лицо</label>
+      <input type="text" required id="user-contact-person" placeholder="Andrzej Abramowski">
+
+      <label for="user-phone" class="field-label">Номер телефона</label>
+      <input type="tel" required id="user-phone" placeholder="+48 954 285 295">
+
+      <label for="user-mail" class="field-label">Адрес e-mail</label>
+      <input type="email" required id="user-mail" placeholder="andrzej@gmail.com">
+
+      <label for="user-password" class="field-label">Пароль</label>
+      <input type="password" required id="user-password" placeholder="••••••••">
+
+
+      <div class="policy-check-wrap">
+        <input type="checkbox" class="policy-check" id="user-policy" required checked>
+        <label for="user-policy" class="second-reg-form__policy-desc">Я принимаю
+          <a href="#" class="second-reg-form__policy-link" target="_blank">правила и условия пользовательского
+            соглашения</a>
+        </label>
+      </div>
+
+      <div class="second-reg-form__recaptcha">
+        <img src="img/jpg/reCAPTCHA.jpg" alt="" style="width: 100%;">
+      </div>
+
+
+      <div class="second-reg-form__submit-wrap">
+        <button type="reset" class="reg-reset-btn">Отменить</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
+      </div>
+
+    </form>
+
+    <form action="#" method="POST" class="second-reg-form form-foreigner hidden">
+
+      <p class="second-reg-form__text">Для регистрации на сайте Вам необходимо заполнить следующие данные</p>
+
+      <label for="foreigner-name" class="field-label">Имя</label>
+      <input type="text" required id="foreigner-name" placeholder="Andrzej">
+
+      <label for="foreigner-surname" class="field-label">Фамилия</label>
+      <input type="text" required id="foreigner-surname" placeholder="Abramowski">
+
+      <label for="foreigner-phone" class="field-label">Номер телефона</label>
+      <input type="tel" required id="foreigner-phone" placeholder="+48 493 925 859">
+
+      <label for="foreigner-email" class="field-label">Адрес электронной почты</label>
+      <input type="email" required id="foreigner-email" placeholder="andrzej@gmail.com">
+
+      <label for="foreigner-password" class="field-label">Пароль</label>
+      <input type="password" required id="foreigner-password" placeholder="••••••••">
+
+      <div class="policy-check-wrap">
+        <input type="checkbox" class="policy-check" id="foreigner-policy" required checked>
+        <label for="foreigner-policy" class="second-reg-form__policy-desc">Я принимаю
+          <a href="#" class="second-reg-form__policy-link" target="_blank">правила и условия пользовательского
+            соглашения</a>
+        </label>
+      </div>
+
+      <div class="second-reg-form__recaptcha">
+        <img src="img/jpg/reCAPTCHA.jpg" alt="" style="width: 100%;">
+      </div>
+
+      <div class="second-reg-form__submit-wrap">
+        <button type="reset" class="reg-reset-btn">Отменить</button>
+        <button type="submit" class="submit-btn reg-submit-btn">Войти</button>
+      </div>
+
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>
