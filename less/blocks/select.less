@@ -92,12 +92,19 @@ input.registration-select::placeholder {
   min-height: 55px;
   display: flex;
   align-items: center;
-  padding-left: 35px;
+  padding: 0 35px;
 
   font-size: 18px;
   line-height: 30px;
   color: #464646;
   cursor: pointer;
+}
+
+.select__body li.select-item {
+  min-height: 55px;
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -114,4 +121,23 @@ input.registration-select::placeholder {
   border-right: 10px solid transparent;
   border-bottom: 5px solid #fff;
   border-top: 0px solid transparent;
+}
+
+.select-body-wrap {
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+.select-body-wrap ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.select-body-wrap {
+  padding: 0;
+}
+
+.select-body-wrap > ul {
+  width: 100%;
+  height: 400px;
 }

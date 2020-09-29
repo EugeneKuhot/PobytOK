@@ -41,14 +41,17 @@ $(document).ready(function() {
     newsList.addClass('offers-block__list--grid');
   })
 
-    $(document).mouseup(function (e){
-      var div = $(".select__body");
-      if (!div.is(e.target)
-        && div.has(e.target).length === 0) {
-        div.parent().removeClass('is-active');
-      }
-    });
 
-  $('.greetings__container').addClass('greetings__container--onload');
+  $('.head__info span').each(function () {
+      $(this).prop('Counter', 0).animate({
+              Counter: $(this).data('value')
+          }, {
+          duration: 1500,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(this.Counter.toFixed());
+          }
+      });
+  });
 
 })
