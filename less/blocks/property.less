@@ -33,7 +33,7 @@
 }
 
 .property-greetings .head__info--bottom {
-  right: 30%;
+  right: calc(50% - 165px);
 }
 
 .vacancy__header--ttl {
@@ -45,11 +45,14 @@
   padding-top: 170px;
 }
 
-@media (max-width: 1220px) {
-  .property-greetings .vacancy__background {
-    height: 35vw;
-  }
+.property-greetings .vacancy__background {
+  left: 35%;
+  bottom: -3%;
+  height: 460px;
+  width: 1315px;
+  right: -5vw;
 }
+
 
 @media (max-width: 1024px) {
   .property-greetings .breadcrumbs {
@@ -82,10 +85,8 @@
   }
 
   .property-greetings .vacancy__background {
-    right: -80vw;
-    bottom: 10%;
+    bottom: -22px;
     height: 500px;
-    width: 135vw;
   }
 
   .property-greetings .vacancy__header--ttl {
