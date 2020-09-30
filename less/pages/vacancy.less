@@ -10,8 +10,8 @@
 .head {
   &__info {
     position: absolute;
-    width: 17.7%;
-    height: 7.7vw;
+    width: 335px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,6 +103,7 @@
 .overflow-hdn {
   width: 100%;
   height: 100%;
+  margin-bottom: auto;
 }
 
 .vacancy {
@@ -165,19 +166,19 @@
         }
       }
       .f-c {
-        min-width: 24.4%;
+        min-width: 25%;
         @media (max-width: @tablet) {
           margin-bottom: 8px;
         }
       }
       .f-s {
-        min-width: 32.3%;
+        min-width: 32%;
         @media (max-width: @tablet) {
           margin-bottom: 8px;
         }
       }
       .f-t {
-        min-width: 26.7%;
+        min-width: 26%;
         @media (max-width: @tablet) {
           margin-bottom: 8px;
         }
@@ -218,7 +219,7 @@
       margin-bottom: 85px;
     }
     &--ttl {
-      padding-top: 112px;
+      padding-top: 170px;
       @media (max-width: @tablet) {
         padding-top: 0;
       }
@@ -228,7 +229,7 @@
         line-height: 78px;
         color: #063453;
         position: relative;
-        margin: 0 0 76px;
+        margin: 0 0 95px;
 
         @media (max-width: @tablet) {
           margin-bottom: 50px;
@@ -245,7 +246,7 @@
           width: 86px;
           background: #fff;
           height: 2px;
-          bottom: -41px;
+          bottom: -45px;
           @media (max-width: @tablet) {
             display: none;
           }
@@ -600,6 +601,11 @@
   }
 }
 
+@media (max-width: 1505px) {
+  .vacancy__header.greetings__container--onload {
+    min-height: 500px;
+  }
+}
 
 @media (max-width: 1439px) {
   .offers-block__item {
@@ -617,12 +623,18 @@
 
 @media (max-width: 1280px) {
   .vacancy__header.greetings__container--onload {
-    background: url(../img/svg/ok-vacancy.svg) no-repeat 16% 9%, #E5E5E5;
+    background: url(../img/svg/ok-vacancy.svg) no-repeat 16% 0, #E5E5E5;
     background-size: 52%;
   }
 }
 
-
+@media (max-width: 1220px) {
+  .vacancy__background {
+    height: 50vw;
+    width: auto;
+    right: -30vw;
+  }
+}
 
 @media (max-width: 1200px) {
   .offers-block__item {
