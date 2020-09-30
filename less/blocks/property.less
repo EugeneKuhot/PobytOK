@@ -45,6 +45,12 @@
   padding-top: 170px;
 }
 
+@media (max-width: 1220px) {
+  .property-greetings .vacancy__background {
+    height: 35vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .property-greetings .breadcrumbs {
     margin: 0;
@@ -56,7 +62,8 @@
   }
 
   .property-greetings {
-    height: 667px;
+    height: 580px;
+    background: url(../img/svg/property-bg.svg) no-repeat center right,#add9f4;
   }
 
   .property-greetings::after {
@@ -70,17 +77,26 @@
   }
 
   .main__search {
-    margin-top: auto;
+    margin-top: 50px;
     margin-bottom: 19px;
   }
 
   .property-greetings .vacancy__background {
-    width: 1000px;
-    right: -50vw;
+    right: -80vw;
     bottom: 10%;
+    height: 500px;
+    width: 135vw;
   }
 
   .property-greetings .vacancy__header--ttl {
-    padding-top: 82px;
+    padding-top: 70px;
   }
+  .property-greetings .vacancy__header--ttl h1 {
+    margin: 0;
+  }
+
+  .property-greetings {
+    margin-bottom: 85px;
+  }
+
 }

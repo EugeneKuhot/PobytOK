@@ -24,9 +24,11 @@
   let wielkopolCities = document.querySelector('.js-wielkopol');
   let zachodpomorCities = document.querySelector('.js-zachodpomor');
 
-  tabletRegionInput.addEventListener('input', function () {
+  let regionsItems = document.querySelectorAll('.filter__wojewodstwo-tablet');
+
+  regionsItems.forEach(el => el.addEventListener('click', function () {
     tabletCityInput.value = '';
-  });
+  }));
 
   let cityWraps = [dolnoslanskCities, kujPomCities, lubelskCities, lubuskCities, lodzCities, malopolskCities,
     mazowieckCities, opolskCities, podkarpacCities, podlaskCities, pomorCities, slaskCities, swietokrzCities,
