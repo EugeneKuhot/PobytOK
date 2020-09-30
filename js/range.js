@@ -43,4 +43,31 @@
     }
   });
 
+
+
+
+const allRanges = document.querySelectorAll(".range-slider");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range-wrap__max-range");
+  const bubble = wrap.querySelector(".range-value-output");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+});
+
+function setBubble(range, bubble) {
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const val = range.value;
+  const bubbleXPercentile = Number(((val - min) * 100) / (max - min));
+
+  bubble.style.left = `calc(${bubbleXPercentile}% + (${20 - bubbleXPercentile * 0.15}px))`;
+}
+
+
+
+
+
 })();

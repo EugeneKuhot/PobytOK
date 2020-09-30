@@ -113,3 +113,30 @@ input[type=range]::-ms-thumb {
 .range-slider {
   margin-bottom: 45px;
 }
+
+.range-slider .range-value-output {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7B8A99;
+  padding: 20px;
+  background-color: #DCE8F1;
+  border-radius: 8px;
+  position: relative;
+  top: -3px;
+}
+
+.range-slider .range-value-output::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 9px solid #dce8f1;
+  border-top: 0 solid transparent;
+  transform: rotate(-90deg);
+}
