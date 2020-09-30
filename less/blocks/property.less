@@ -1,0 +1,78 @@
+.property-greetings {
+  background: url(../img/svg/property-bg.svg) no-repeat center top, #add9f4;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+.property-greetings::after {
+  content: '';
+  width: 100%;
+  height: 85px;
+  display: block;
+  background: #fff;
+}
+
+.property-greetings .breadcrumbs {
+  margin: 0;
+  padding: 45px 0 0 0;
+}
+
+.greetings-background-wrap {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -70px;
+  height: 115%;
+}
+
+.property-greetings .head__info--center {
+  right: 5%;
+}
+
+.property-greetings .head__info--bottom {
+  right: 30%;
+}
+
+.vacancy__header--ttl {
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .property-greetings .breadcrumbs {
+    margin: 0;
+    padding: 15px 0 0;
+  }
+
+  .greetings-background-wrap {
+    bottom: 0;
+  }
+
+  .property-greetings {
+    height: 667px;
+  }
+
+  .property-greetings::after {
+    display: none;
+  }
+
+  .property-greetings .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__search {
+    margin-top: auto;
+    margin-bottom: 19px;
+  }
+
+  .property-greetings .vacancy__background {
+    width: 1000px;
+    right: -50vw;
+    bottom: 10%;
+  }
+}

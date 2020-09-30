@@ -86,7 +86,7 @@
   }
   .offers-block__filter {
     float: left;
-    @media (max-width: @tablet) {
+    @media (max-width: 1200px) {
       display: none;
     }
   }
@@ -275,7 +275,7 @@
   }
   &__mobile-filter {
     display: none;
-    @media (max-width: @tablet) {
+    @media (max-width: 1200px) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -621,9 +621,9 @@
 
 
 
-@media (max-width: 1220px) {
+@media (max-width: 1200px) {
   .offers-block__item {
-    width: 100%;
+    width: 49%;
   }
   .vacancy-container .offers-block__offers {
     width: calc(60% - 30px);
@@ -631,13 +631,13 @@
   .offers-block__filter {
     width: 40%;
   }
+  .vacancy-container .offers-block__offers {
+    width: 100%;
+  }
 }
 
 
 @media (max-width: 1024px) {
-  .vacancy-container .offers-block__offers {
-    width: 100%;
-  }
 
   .vacancy__header.greetings__container--onload {
     width: 100%;
@@ -647,6 +647,10 @@
 
   .head__info {
     display: none;
+  }
+
+  .offers-block__item {
+    width: 100%;
   }
 }
 
