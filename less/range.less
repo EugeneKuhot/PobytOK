@@ -116,6 +116,7 @@ input[type=range]::-ms-thumb {
 
 
 .range-slider .range-value-output {
+  position: absolute;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -124,13 +125,13 @@ input[type=range]::-ms-thumb {
   background-color: #DCE8F1;
   border-radius: 8px;
   position: relative;
-  top: -3px;
+  top: -4px;
 }
 
 .range-slider .range-value-output::before {
   content: '';
   position: absolute;
-  top: 25px;
+  top: calc(50% - 4px);
   left: -15px;
   margin: 0 auto;
   width: 0;

@@ -2441,53 +2441,109 @@
       <div class="offers-block__filter">
         <form action="#" method="#">
           <div class="select-wrap">
-            <label for="employer-type" class="field-label">Работодатель</label>
+            <label for="mobile-offer-origin" class="field-label">Предложение от</label>
             <div class="select__header">
-              <input type="text" class="select" id="employer-type" value="Все" readonly>
+              <input type="text" class="select" id="mobile-offer-origin" value="Все" readonly>
               <span class="select__icon"></span>
             </div>
             <ul class="select__body">
               <li class="select-item">Все</li>
-              <li class="select-item">Прямой работодатель</li>
-              <li class="select-item">Агентство по трудоустройству</li>
+              <li class="select-item">Агентство недвижимости</li>
+              <li class="select-item">Физическое лицо</li>
             </ul>
           </div>
-
           <div class="select-wrap">
-            <label for="mobile-offer-type" class="field-label">Тип договора</label>
+            <label for="mobile-offer-type" class="field-label">Тип предложения</label>
             <div class="select__header">
               <input type="text" class="select" id="mobile-offer-type" value="Все" readonly>
               <span class="select__icon"></span>
             </div>
             <ul class="select__body">
               <li class="select-item">Все</li>
-              <li class="select-item">Umowa o pracę</li>
-              <li class="select-item">Umowa zlecenie</li>
-              <li class="select-item">Umowa o dzieło</li>
-              <li class="select-item">Samozatrudnienie</li>
-              <li class="select-item">Другое</li>
+              <li class="select-item">Аренда</li>
+              <li class="select-item">Продажа</li>
+              <li class="select-item">Обмен</li>
             </ul>
           </div>
+          <div>
+            <label class="field-label">Цена</label>
 
+            <div class="range-wrap middle">
+              <div class="range-slider">
+
+                <input type="number" id="mobile-price-from" class="offers-block__filter-number" value="1000"> - <input
+                type="number" id="mobile-price-for" class="offers-block__filter-number" value="5000">
+                <input type="range" class="range-wrap__min-range" id="mobile-input-left" min="0" max="10000" value="0">
+                <input type="range" class="range-wrap__max-range" id="mobile-input-right" min="0" max="10000" value="10000">
+                <output class="range-value-output">ПОКАЗАТЬ 12 890 РЕЗУЛЬТАТОВ </output>
+              </div>
+            </div>
+
+          </div>
+          <div>
+            <label class="field-label">Площадь, м2</label>
+            <div>
+              <input type="number" class="offers-block__filter-number" placeholder="От"> - <input type="number"
+                                                                                                  class="offers-block__filter-number"
+                                                                                                  placeholder="До">
+            </div>
+          </div>
           <div class="select-wrap">
-            <label for="worktime" class="field-label">Время работы</label>
+            <label for="mobile-level" class="field-label">Этаж</label>
             <div class="select__header">
-              <input type="text" class="select" id="worktime" value="Все" readonly>
+              <input type="text" class="select" id="mobile-level" value="Все" readonly>
               <span class="select__icon"></span>
             </div>
             <ul class="select__body">
               <li class="select-item">Все</li>
-              <li class="select-item">Полная занятость</li>
-              <li class="select-item">Частичная занятость</li>
-              <li class="select-item">Сезонные работы/подработка</li>
-              <li class="select-item">Практика/стажировка</li>
+              <li class="select-item">Подвал</li>
+              <li class="select-item">Партер</li>
+              <li class="select-item">1</li>
+              <li class="select-item">2</li>
+              <li class="select-item">3</li>
+              <li class="select-item">4</li>
+              <li class="select-item">5</li>
+              <li class="select-item">6</li>
+              <li class="select-item">7</li>
+              <li class="select-item">8</li>
+              <li class="select-item">9</li>
+              <li class="select-item">10</li>
+              <li class="select-item">Выше 10</li>
+              <li class="select-item">Чердак</li>
             </ul>
           </div>
-
           <div class="select-wrap">
-            <label for="property-from-work" class="field-label">Жильё</label>
+            <label for="mobile-rooms" class="field-label">Количество комнат</label>
             <div class="select__header">
-              <input type="text" class="select" id="property-from-work" value="Все" readonly>
+              <input type="text" class="select" id="mobile-rooms" value="Все" readonly>
+              <span class="select__icon"></span>
+            </div>
+            <ul class="select__body">
+              <li class="select-item">Все</li>
+              <li class="select-item">Кавалерка</li>
+              <li class="select-item">Комната</li>
+              <li class="select-item">2 комнаты</li>
+              <li class="select-item">3 комнаты</li>
+              <li class="select-item">4 и больше</li>
+            </ul>
+          </div>
+          <div class="select-wrap">
+            <label for="mobile-furniture" class="field-label">Мебель</label>
+            <div class="select__header">
+              <input type="text" class="select" id="mobile-furniture" value="Все" readonly>
+              <span class="select__icon"></span>
+            </div>
+            <ul class="select__body">
+              <li class="select-item">Все</li>
+              <li class="select-item">Да</li>
+              <li class="select-item">Нет</li>
+              <li class="select-item">Частично</li>
+            </ul>
+          </div>
+          <div class="select-wrap">
+            <label for="mobile-animals" class="field-label">Домашние животные</label>
+            <div class="select__header">
+              <input type="text" class="select" id="mobile-animals" value="Все" readonly>
               <span class="select__icon"></span>
             </div>
             <ul class="select__body">
@@ -2496,26 +2552,53 @@
               <li class="select-item">Нет</li>
             </ul>
           </div>
-
+          <div class="select-wrap">
+            <label for="mobile-children" class="field-label">Дети</label>
+            <div class="select__header">
+              <input type="text" class="select" id="mobile-children" value="Все" readonly>
+              <span class="select__icon"></span>
+            </div>
+            <ul class="select__body">
+              <li class="select-item">Все</li>
+              <li class="select-item">Да</li>
+              <li class="select-item">Нет</li>
+            </ul>
+          </div>
+          <div class="select-wrap">
+            <label for="mobile-foreigner" class="field-label">Иностранцы</label>
+            <div class="select__header">
+              <input type="text" class="select" id="mobile-foreigner" value="Все" readonly>
+              <span class="select__icon"></span>
+            </div>
+            <ul class="select__body">
+              <li class="select-item">Все</li>
+              <li class="select-item">Да</li>
+              <li class="select-item">Нет</li>
+            </ul>
+          </div>
+          <div class="select-wrap">
+            <label for="mobile-smokers" class="field-label">Курильщики</label>
+            <div class="select__header">
+              <input type="text" class="select" id="mobile-smokers" value="Все" readonly>
+              <span class="select__icon"></span>
+            </div>
+            <ul class="select__body">
+              <li class="select-item">Все</li>
+              <li class="select-item">Да</li>
+              <li class="select-item">Нет</li>
+            </ul>
+          </div>
           <div class="filter__btm">
             <span class="filter__reset">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6.66797 0.96582H9.34204V1.41577H10.3077V0.902832C10.3079 0.405029 9.90308 0 9.40552 0H6.60449C6.10693 0 5.70215 0.405029 5.70215 0.902832V1.41577H6.66797V0.96582Z"
-                  fill="#063453"/>
-                <path
-                  d="M12.5377 5.24219H3.47175C3.22333 5.24219 3.02778 5.4541 3.0478 5.70178L3.80573 15.0739C3.84797 15.597 4.28437 16 4.80866 16H11.2006C11.7249 16 12.1613 15.597 12.2036 15.0737L12.9615 5.70178C12.9816 5.4541 12.7861 5.24219 12.5377 5.24219ZM5.66694 15.0004C5.65681 15.001 5.64667 15.0013 5.63666 15.0013C5.38349 15.0013 5.17097 14.8042 5.15522 14.5481L4.68024 6.85413C4.66389 6.58789 4.8664 6.35876 5.13251 6.34241C5.39777 6.32629 5.62788 6.52832 5.64423 6.79468L6.11909 14.4886C6.13557 14.7549 5.93305 14.9839 5.66694 15.0004ZM8.49299 14.5184C8.49299 14.785 8.2768 15.0012 8.01008 15.0012C7.74335 15.0012 7.52717 14.785 7.52717 14.5184V6.82434C7.52717 6.55762 7.74335 6.34143 8.01008 6.34143C8.27668 6.34143 8.49299 6.55762 8.49299 6.82434V14.5184ZM11.3292 6.85278L10.8757 14.5468C10.8607 14.8033 10.6478 15.0012 10.3941 15.0012C10.3846 15.0012 10.3749 15.001 10.3653 15.0005C10.0991 14.9847 9.89594 14.7562 9.91169 14.49L10.3651 6.7959C10.3807 6.52966 10.6085 6.32654 10.8754 6.34229C11.1417 6.35791 11.3448 6.58655 11.3292 6.85278Z"
-                  fill="#063453"/>
-                <path
-                  d="M14.2077 3.75195L13.8906 2.80127C13.807 2.55066 13.5724 2.38159 13.3081 2.38159H2.70152C2.43736 2.38159 2.20262 2.55066 2.11912 2.80127L1.80199 3.75195C1.74083 3.9353 1.82042 4.12231 1.96898 4.21558C2.02952 4.25354 2.10118 4.27637 2.17992 4.27637H13.8298C13.9086 4.27637 13.9803 4.25354 14.0408 4.21545C14.1893 4.12219 14.2689 3.93518 14.2077 3.75195Z"
-                  fill="#063453"/>
+                <path d="M6.66797 0.96582H9.34204V1.41577H10.3077V0.902832C10.3079 0.405029 9.90308 0 9.40552 0H6.60449C6.10693 0 5.70215 0.405029 5.70215 0.902832V1.41577H6.66797V0.96582Z" fill="#063453"></path>
+                <path d="M12.5377 5.24219H3.47175C3.22333 5.24219 3.02778 5.4541 3.0478 5.70178L3.80573 15.0739C3.84797 15.597 4.28437 16 4.80866 16H11.2006C11.7249 16 12.1613 15.597 12.2036 15.0737L12.9615 5.70178C12.9816 5.4541 12.7861 5.24219 12.5377 5.24219ZM5.66694 15.0004C5.65681 15.001 5.64667 15.0013 5.63666 15.0013C5.38349 15.0013 5.17097 14.8042 5.15522 14.5481L4.68024 6.85413C4.66389 6.58789 4.8664 6.35876 5.13251 6.34241C5.39777 6.32629 5.62788 6.52832 5.64423 6.79468L6.11909 14.4886C6.13557 14.7549 5.93305 14.9839 5.66694 15.0004ZM8.49299 14.5184C8.49299 14.785 8.2768 15.0012 8.01008 15.0012C7.74335 15.0012 7.52717 14.785 7.52717 14.5184V6.82434C7.52717 6.55762 7.74335 6.34143 8.01008 6.34143C8.27668 6.34143 8.49299 6.55762 8.49299 6.82434V14.5184ZM11.3292 6.85278L10.8757 14.5468C10.8607 14.8033 10.6478 15.0012 10.3941 15.0012C10.3846 15.0012 10.3749 15.001 10.3653 15.0005C10.0991 14.9847 9.89594 14.7562 9.91169 14.49L10.3651 6.7959C10.3807 6.52966 10.6085 6.32654 10.8754 6.34229C11.1417 6.35791 11.3448 6.58655 11.3292 6.85278Z" fill="#063453"></path>
+                <path d="M14.2077 3.75195L13.8906 2.80127C13.807 2.55066 13.5724 2.38159 13.3081 2.38159H2.70152C2.43736 2.38159 2.20262 2.55066 2.11912 2.80127L1.80199 3.75195C1.74083 3.9353 1.82042 4.12231 1.96898 4.21558C2.02952 4.25354 2.10118 4.27637 2.17992 4.27637H13.8298C13.9086 4.27637 13.9803 4.25354 14.0408 4.21545C14.1893 4.12219 14.2689 3.93518 14.2077 3.75195Z" fill="#063453"></path>
               </svg>
                 <input type="reset" value="Очистить">
             </span>
             <button class="filter__add">ПРИМЕНИТЬ</button>
           </div>
-
-
         </form>
       </div>
     </div>
@@ -2538,7 +2621,6 @@
             <li class="select-item">Физическое лицо</li>
           </ul>
         </div>
-
         <div class="select-wrap">
           <label for="offer-type" class="field-label">Тип предложения</label>
           <div class="select__header">
@@ -2552,9 +2634,8 @@
             <li class="select-item">Обмен</li>
           </ul>
         </div>
-
         <div>
-          <label for="worktime" class="field-label">Цена</label>
+          <label class="field-label">Цена</label>
 
           <div class="range-wrap middle">
             <div class="range-slider">
@@ -2563,12 +2644,11 @@
               type="number" id="price-for" class="offers-block__filter-number" value="5000">
               <input type="range" class="range-wrap__min-range" id="input-left" min="0" max="10000" value="0">
               <input type="range" class="range-wrap__max-range" id="input-right" min="0" max="10000" value="10000">
-              <output class="range-value-output">ПОКАЗАТЬ 12 890 РЕЗУЛЬТАТОВ </output>
+              <output class="range-value-output"><span>ПОКАЗАТЬ 12 890 РЕЗУЛЬТАТОВ</span></output>
             </div>
           </div>
 
         </div>
-
         <div>
           <label class="field-label">Площадь, м2</label>
           <div>
@@ -2577,7 +2657,6 @@
                                                                                                 placeholder="До">
           </div>
         </div>
-
         <div class="select-wrap">
           <label for="level" class="field-label">Этаж</label>
           <div class="select__header">
@@ -2678,7 +2757,6 @@
             <li class="select-item">Нет</li>
           </ul>
         </div>
-
       </form>
     </div>
     <div class="offers-block__offers">
