@@ -227,7 +227,7 @@
 
 <main class="page-main">
 
-  <div class="greetings__container vacancy__header greetings__container--onload">
+  <div class="greetings__container vacancy__header">
 
     <div class="vacancy-background-wrap">
       <img src="img/png/vacancy-bg.png" alt="" class="vacancy__background">
@@ -236,8 +236,11 @@
     <div class="overflow-hdn">
 
       <div class="head__info head__info--left">
-        <span data-value="68933">68 933</span>
-        ВСЕГО НА ПОРТАЛЕ
+        <div>
+          <p class="head__info__count" data-value="68933">68 933</p>
+          <p class="head__info__desc">ВСЕГО НА ПОРТАЛЕ</p>
+        </div>
+
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="22" cy="22" r="22" fill="#03A9F4"/>
           <path
@@ -247,8 +250,10 @@
       </div>
 
       <div class="head__info head__info--bottom">
-        <span data-value="3933">3 933</span>
-        НОВЫХ ЗА НЕДЕЛЮ
+        <div>
+          <p class="head__info__count" data-value="3933">3 933</p>
+          <p class="head__info__desc">НОВЫХ ЗА НЕДЕЛЮ</p>
+        </div>
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="22" cy="22" r="22" fill="#FF9066"/>
           <path
@@ -262,8 +267,11 @@
       </div>
 
       <div class="head__info head__info--center">
-        <span data-value="19512">19 512</span>
-        НОВЫХ ЗА МЕСЯЦ
+        <div>
+          <p class="head__info__count" data-value="19512">19 512</p>
+          <p class="head__info__desc">НОВЫХ ЗА МЕСЯЦ</p>
+        </div>
+
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="22" cy="22" r="22" fill="#00AB5B"/>
           <path
@@ -275,7 +283,7 @@
 
       <div class="container ">
         <ul class="breadcrumbs">
-          <li><a href="#">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="#">Работа</a></li>
           <li>Вакансии</li>
         </ul>
@@ -2415,11 +2423,11 @@
 
 
             <input class="f-t" type="text" placeholder="Запрос (например: автослесарь, водитель)">
-            <button>
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="main__search__search-submit">
+              <svg width="15" height="15" class="" viewBox="0 0 15 15" fill="white" stroke="white" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M13.9207 13.1547L10.1443 9.37832C10.8605 8.49404 11.2917 7.36984 11.2917 6.14585C11.2917 3.30845 8.98324 1 6.14583 1C3.30842 1 1 3.30845 1 6.14585C1 8.98326 3.30845 11.2917 6.14586 11.2917C7.36984 11.2917 8.49404 10.8605 9.37832 10.1443L13.1547 13.9207C13.2605 14.0264 13.432 14.0264 13.5378 13.9207L13.9207 13.5377C14.0264 13.432 14.0264 13.2605 13.9207 13.1547ZM6.14586 10.2084C3.90566 10.2084 2.08334 8.38605 2.08334 6.14585C2.08334 3.90566 3.90566 2.08334 6.14586 2.08334C8.38605 2.08334 10.2084 3.90566 10.2084 6.14585C10.2084 8.38605 8.38605 10.2084 6.14586 10.2084Z"
-                  fill="white" stroke="white"/>
+                  />
               </svg>
               ИСКАТЬ
             </button>
@@ -3805,6 +3813,6 @@
 <script src="js/accordion.js"></script>
 <script src="js/vacancy-remove-selects.js"></script>
 <script src="js/tablet-filter-city.js"></script>
-
+<script src="js/index-load.js"></script>
 </body>
 </html>

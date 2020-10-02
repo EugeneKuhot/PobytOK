@@ -11,6 +11,8 @@
   содержит множество полезных инструментов, которые помогут сделать пребывание иностранцев в Польше более комфортным.">
   <title>PobytOK – Портал для иностранных граждан, пребывающих в Польше</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -2446,8 +2448,15 @@
           </div>
           <div>
             <label class="field-label">Цена</label>
+            <input type="number" id="mobile-price-from" class="offers-block__filter-number" value="1000"> - <input
+            type="number" id="mobile-price-for" class="offers-block__filter-number" value="5000">
 
-            <div class="range-wrap middle">
+            <div class="bar">
+              <div class="label">Price</div>
+              <div id="r-slider"></div>
+            </div>
+
+            <!--<div class="range-wrap middle">
               <div class="range-slider">
 
                 <input type="number" id="mobile-price-from" class="offers-block__filter-number" value="1000"> - <input
@@ -2456,7 +2465,7 @@
                 <input type="range" class="range-wrap__max-range" id="mobile-input-right" min="0" max="10000" value="10000">
                 <output class="range-value-output">ПОКАЗАТЬ 12 890 РЕЗУЛЬТАТОВ </output>
               </div>
-            </div>
+            </div>-->
 
           </div>
           <div>
@@ -3936,9 +3945,12 @@
 <script src="js/registration-type.js"></script>
 <script src="js/select.js"></script>
 <script src="js/user-dropdown.js"></script>
-<script src="js/range.js"></script>
+<!--<script src="js/range.js"></script>-->
 <script src="js/vacancy-remove-selects.js"></script>
 <script src="js/tablet-filter-city.js"></script>
+
+<script src="js/nouislider.min.js"></script>
+<script src="js/main-range.js"></script>
 
 </body>
 </html>

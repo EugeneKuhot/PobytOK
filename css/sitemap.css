@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Cuprum-Regular";
+  src: url("../fonts/Cuprum-Regular.woff2"),
+  url("../fonts/Cuprum-Regular.woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #000;
+  padding: 30px;
+  font-family: "Cuprum-Regular";
+  font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
