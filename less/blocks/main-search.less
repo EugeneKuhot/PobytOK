@@ -1,5 +1,5 @@
 .main__search {
-  margin-top: 22px;
+  margin-top: -30px;
 }
 
 .main__search__form {
@@ -77,15 +77,20 @@ input.main__search__city-input {
 
 .filter__all-regions-desktop-wrap.is-active .select__body,
 .main__search__category-wrap.is-active .select__body {
-  top: 65px;
+  top: 60px;
 }
 
 @media (max-width: 1024px) {
   .main__search__form {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 390px;
     width: 100%;
+  }
+
+  .main__search__form > div,
+  input.main__search__input {
+    width: 49%;
   }
 
   .main__search__category-wrap,
@@ -130,4 +135,31 @@ input.main__search__city-input {
  .main__search__form .filter__city-input {
    background: #fff;
  }
+}
+
+@media (max-width: 768px) {
+  .main__search__form {
+    display: block;
+    width: 70%;
+  }
+
+  .main__search__form > div, input.main__search__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .main__search__form {
+    width: 100%;
+  }
+
+  .vacancy__head--info p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .vacancy__head--bg {
+    max-width: 100%;
+  }
 }
