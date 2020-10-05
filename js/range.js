@@ -88,7 +88,7 @@ var rangeS2 = parent[1].querySelectorAll("input[type=range]"),
   const allRanges = document.querySelectorAll(".range-slider");
   allRanges.forEach(wrap => {
   const range = wrap.querySelector(".range-wrap__max-range");
-  const bubble = wrap.querySelector(".range-value-output");
+  const bubble = wrap.querySelector(".range-output");
 
   range.addEventListener("input", () => {
     setBubble(range, bubble);
@@ -102,7 +102,7 @@ var rangeS2 = parent[1].querySelectorAll("input[type=range]"),
   const val = range.value;
   const bubbleXPercentile = Number(((val - min) * 100) / (max - min));
 
-  bubble.style.left = `calc(${bubbleXPercentile}% + (${20 - bubbleXPercentile * 0.15}px))`;
+  bubble.style.left = `calc(${bubbleXPercentile}% + (${30 - bubbleXPercentile * 0.15}px))`;
 }
 
 
