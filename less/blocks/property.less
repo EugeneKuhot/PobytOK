@@ -1,9 +1,15 @@
 .property-greetings {
-  background: url(../img/svg/property-bg.svg) no-repeat center top, #add9f4;
+  background: url(../img/svg/property-bg.svg) no-repeat center -700px, #add9f4;
   background-size: cover;
   position: relative;
-  height: 538px;
+  height: 514px;
   margin-bottom: 196px;
+  transition: all .3s ease;
+}
+
+.property-greetings.greetings__container--onload {
+  background: url(../img/svg/property-bg.svg) no-repeat center top, #add9f4;
+  transition: all .3s ease;
 }
 
 .property-greetings::after {
