@@ -223,6 +223,26 @@ ul {
   padding-left: 0;
 }
 
+.select-body-wrap::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+.select-body-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #fff, #e4e4e4);
+  border: 1px solid #aaa;
+}
+
+.select-body-wrap::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.select-body-wrap::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(left, #22ADD4, #1E98BA);
+}
+
 @media (max-width: 995px) {
   input[type="submit"],
   .submit-btn {

@@ -2454,20 +2454,17 @@
           </div>
           <div>
             <label class="field-label">Цена</label>
-            <input type="number" id="mobile-price-from" class="offers-block__filter-number" value="1000"> - <input
-            type="number" id="mobile-price-for" class="offers-block__filter-number" value="5000">
 
-            <!--<div class="range-wrap middle">
+            <div class="range-wrap middle">
               <div class="range-slider">
 
-                <input type="number" id="mobile-price-from" class="offers-block__filter-number" value="1000"> - <input
-                type="number" id="mobile-price-for" class="offers-block__filter-number" value="5000">
+                <input type="number" id="mobile-price-from" class="offers-block__filter-number" value="0"> - <input
+                type="number" id="mobile-price-for" class="offers-block__filter-number" value="10000">
                 <input type="range" class="range-wrap__min-range" id="mobile-input-left" min="0" max="10000" value="0">
                 <input type="range" class="range-wrap__max-range" id="mobile-input-right" min="0" max="10000" value="10000">
-                <output class="range-value-output">ПОКАЗАТЬ 12 890 РЕЗУЛЬТАТОВ </output>
-              </div>
-            </div>-->
 
+              </div>
+            </div>
           </div>
           <div>
             <label class="field-label">Площадь, м2</label>
@@ -2625,10 +2622,15 @@
         </div>
         <div>
           <label class="field-label">Цена</label>
-          <input type="number" id="price-from" class="offers-block__filter-number" value="0"> - <input
-          type="number" id="price-for" class="offers-block__filter-number" value="10000">
-          <div class="bar">
-            <div id="r-slider"></div>
+
+          <div class="range-wrap middle">
+            <div class="range-slider">
+
+              <input type="number" id="price-from" class="offers-block__filter-number" value="0"> - <input
+              type="number" id="price-for" class="offers-block__filter-number" value="10000">
+              <input type="range" class="range-wrap__min-range" id="input-left" min="0" max="10000" value="0">
+              <input type="range" class="range-wrap__max-range" id="input-right" min="0" max="10000" value="10000">
+            </div>
           </div>
 
         </div>

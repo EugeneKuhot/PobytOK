@@ -42,7 +42,7 @@ $(document).ready(function() {
   })
 
 
-  $('.head__info span').each(function () {
+  $('.head__info p').each(function () {
       $(this).prop('Counter', 0).animate({
               Counter: $(this).data('value')
           }, {

@@ -20,7 +20,7 @@
     color: #7B8A99;
     display: flex;
     align-items: center;
-    @media (max-width: 580px) {
+    @media (max-width: 768px) {
       font-size: 12px;
       line-height: 20px;
     }
@@ -39,10 +39,16 @@
       color: #464646;
       font-size: 18px;
       line-height: 30px;
-      @media (max-width: 580px) {
+      transition: all .3s ease;
+      @media (max-width: 768px) {
         font-size: 12px;
         line-height: 20px;
       }
     }
   }
+}
+
+.breadcrumbs a:hover {
+  color: #063453;
+  transition: all .3s ease;
 }
