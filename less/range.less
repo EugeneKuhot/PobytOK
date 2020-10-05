@@ -142,3 +142,51 @@ input[type=range]::-ms-thumb {
   border-top: 0 solid transparent;
   transform: rotate(-90deg);
 }
+
+.range-output {
+  width: 263px;
+  height: 58px;
+  background: #DCE8F1;
+  border-radius: 8px;
+  color: #7B8A99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 65px;
+  right: -275px;
+}
+
+.range-output::after {
+  content: '';
+  position: absolute;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  top: 25px;
+  left: -15px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #dce8f1;
+  transform: rotate(-90deg);
+}
+
+.range-wrap {
+  position: relative;
+}
+
+
+@media (max-width: 1200px) {
+  .range-output {
+    right: 0px;
+    width: 124px;
+    top: 110px;
+  }
+
+  .range-output::after {
+    top: -8px;
+    transform: rotate(0deg);
+    left: 100px;
+  }
+}
+
