@@ -1,14 +1,16 @@
 .legalization__greetings {
-  min-height: 538px;
+  min-height: 730px;
   background-color: #E5E5E5;
 }
 
 .legalization__greetings.greetings__container--onload {
-  background: url(../img/svg/ok.svg) no-repeat 65% bottom,url(../img/svg/Ellipse.svg) no-repeat 40% top, #E5E5E5;
+  background: url(../img/svg/ok.svg) no-repeat 65% 10%,url(../img/svg/Ellipse.svg) no-repeat 40% top, #E5E5E5;
+  background-size: 46%;
 }
 
 .legalization__greetings .container {
   height: 100%;
+  position: relative;
 }
 
 .legalization__title {
@@ -35,12 +37,14 @@
   right: 0;
 }
 
-.legalization__greetings::after {
+.legalization__greetings::before {
   content: '';
   display: block;
   height: 215px;
   width: 100%;
   background-color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
 }
 
 .legalization__greetings {
@@ -49,4 +53,38 @@
 
 svg.legalization__info-wrap-icon {
   top: 110px;
+}
+
+.legalization__greetings-icon {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.legalization__desc {
+  margin: 0 auto;
+  width: 62%;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #7B8A99;
+  padding: 10px 0 70px 0;
+}
+
+.legalization__desc-text {
+  color: #464646;
+}
+
+@media (max-width: 1200px) {
+  .legalization__greetings.greetings__container--onload {
+    background-size: 55%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .legalization__greetings {
+    min-height: 680px;
+  }
 }

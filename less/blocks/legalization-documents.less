@@ -5,6 +5,10 @@
   margin: auto;
 }
 
+.legalization-documents__list p {
+  margin: 0;
+}
+
 .legalization-documents {
   min-height: 575px;
   background: #F2F4F5;
@@ -16,9 +20,11 @@
   width: 100%;
   min-height: 117px;
   background-color: #FFFFFF;
-  box-shadow: 0 0 24px rgba(6,52,83,.1);
+  box-shadow: 0 0 24px rgba(6, 52, 83, .1);
   margin-bottom: 12px;
   position: relative;
+  overflow: hidden;
+  transition: all .3s ease;
 }
 
 .legalization-documents__item::after {
@@ -30,12 +36,14 @@
   width: 18%;
   height: 100%;
   position: absolute;
-  top: calc(50% - 52px);
+  top: 0;
   right: 0;
   color: #FFFFFF;
   font-family: "Cuprum-Bold", "Arial", sans-serif;
   font-size: 60px;
   line-height: 60px;
+  max-height: 270px;
+  transition: all .3s ease;
 }
 
 .legalization-documents__item:first-child::after {
@@ -48,6 +56,13 @@
 
 .legalization-documents__item:nth-child(3)::after {
   content: '03';
+}
+
+.legalization-documents__item.open-accordion::after {
+  justify-content: flex-end;
+  align-items: center;
+  top: calc(50% - 65px);
+  transition: all .3s ease;
 }
 
 .legalization-documents__item .accordion {
@@ -81,16 +96,16 @@
 
 .legalization-documents__second-level {
   width: 82%;
-  border-top: 1px solid #F2F4F5;
   margin-left: 25px;
 }
 
-.legalization-documents__second-level p {
+.legalization-documents__second-level > p {
   padding-left: 40px;
 }
 
 .legalization-documents__doc-list {
   list-style: none;
+  border-top: 1px solid #f2f4f5;
 }
 
 .legalization-documents__doc-list li {
@@ -120,7 +135,31 @@
   transition: all .3s ease;
 }
 
-.legalization-documents__link::after {
+.legalization-documents__second-level-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.legalization-documents__second-level-list {
+  width: 95%;
+  margin-left: auto;
+}
+
+.legalization-documents__second-level-item {
+  position: relative;
+  width: 100%;
+  padding: 35px 40px 35px 25px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.consular-city,
+.legalization-documents__second-level-item {
+  color: #063453 !important;
+}
+
+.legalization-documents__second-level-item::after {
   content: '';
   width: 23px;
   height: 10px;
@@ -132,3 +171,106 @@
   z-index: 2;
   transform: rotate(-90deg);
 }
+
+.legalization-documents__second-level-block .legalization-documents__second-level-item.accordion {
+  width: 100%;
+}
+
+.legalization-documents__second-level-list {
+  padding: 0 0 0 20px;
+}
+
+.legalization-documents__second-level-item .accordion::after {
+  display: none;
+}
+
+.legalization-documents__item .accordion.consular-city {
+  padding: 50px 0 50px 50px;
+}
+
+.consular-city-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.legalization-documents__consular-doc-list {
+  width: 95%;
+  margin-left: auto;
+}
+
+@media (max-width: 1080px) {
+  .legalization-documents__list {
+    width: 70%;
+  }
+}
+
+@media (max-width: 995px) {
+  .legalization-documents__list {
+    width: 100%;
+  }
+
+  .legalization-documents .container {
+    padding: 100px 15px;
+  }
+
+  .legalization-documents__item::after {
+    font-size: 35px;
+    width: 15%;
+  }
+}
+
+@media (max-width: 690px) {
+  .legalization-documents__item::after {
+    display: none;
+  }
+
+  .legalization-documents__item .accordion {
+    width: 100%;
+    padding: 40px 35px 40px 20px;
+  }
+
+  .legalization-documents__item .accordion::after {
+    right: 20px;
+  }
+
+  .legalization-documents__second-level {
+    width: 95%;
+  }
+
+  .legalization__desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .legalization-documents__item:first-child::before {
+    left: 20px;
+  }
+
+  .legalization-documents__item span,
+  .legalization-documents__link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .legalization-documents__link {
+    padding: 20px 40px 20px 25px;
+  }
+
+  .legalization-documents__item .accordion.consular-city {
+    padding: 40px 0 40px 0px;
+  }
+
+  .legalization-documents__consular-doc-list {
+    width: 100%;
+    padding: 0;
+  }
+
+  .legalization-documents__second-level-block .legalization-documents__second-level-item.accordion {
+    padding: 40px 35px 40px 0;
+  }
+
+  .legalization-documents__second-level-list {
+    padding: 0;
+  }
+}
+

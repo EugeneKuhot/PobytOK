@@ -233,8 +233,8 @@
       }
       h1 {
         font-family: 'Khula-Extra-Bold', Arial, sans-serif;
-        font-size: 35px;
-        line-height: 55px;
+        font-size: 60px;
+        line-height: 78px;
         color: #063453;
         position: relative;
         margin: 0 0 90px;
@@ -242,6 +242,8 @@
         @media (max-width: @tablet) {
           margin-bottom: 50px;
           margin-top: 70px;
+          font-size: 35px;
+          line-height: 55px;
         }
         @media (max-width: 580px) {
           font-size: 18px;
@@ -612,7 +614,10 @@
 .offers-block__list--grid {
   @media (min-width: @tablet) {
     .news-descr {
-      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     .new-ads__title-block {
       height: auto;

@@ -229,10 +229,12 @@
 <main>
   <div class="greetings__container legalization__greetings">
     <div class="container">
+      <img class="legalization__greetings-icon" src="img/png/legalization-greetings.png" alt="">
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li>Легализация</li>
       </ul>
+
 
       <h1 class="legalization__title">Легализация пребывания</h1>
 
@@ -276,16 +278,16 @@
         </div>
       </div>
 
-      <img src="img/png/legalization-greetings.png" alt="">
+
 
     </div>
   </div>
 
   <div class="container">
-    <p>Данный раздел предназначен для помощи в создании заявлений (внесков), связанных с легальным пребыванием
+    <p class="legalization__desc">Данный раздел предназначен для помощи в создании заявлений (внесков), связанных с легальным пребыванием
       иностранных граждан на территории Польши. Перечень заявлений систематически пополняется в зависимости от их
-      популярности. Для полноценного использования данной функции, необходимо зарегистрироваться как “Иностранец”.
-      Данный инструмент является абсолютно БЕСПЛАТНЫМ!</p>
+      популярности. Для полноценного использования данной функции, необходимо зарегистрироваться как “Иностранец”.<br/>
+      <span class="legalization__desc-text">Данный инструмент является абсолютно БЕСПЛАТНЫМ!</span></p>
   </div>
 
   <section class="legalization-documents">
@@ -345,7 +347,49 @@
             <span>Заявления в посольство / консульство</span>
           </button>
           <div class="panel legalization-documents__second-level">
+            <ul class="legalization-documents__doc-list">
+              <li class="legalization-documents__second-level-block">
+                <p class="legalization-documents__second-level-item accordion">Украина</p>
+                <ul class="legalization-documents__second-level-list panel">
+                  <li class="consular-city-wrap">
+                    <p class="accordion consular-city legalization-documents__second-level-item">Краков</p>
+                    <ul class="panel legalization-documents__consular-doc-list">
+                      <li><a class="legalization-documents__link" href="#">Постоянный / временный консульский учёт</a></li>
+                    </ul>
+                  </li>
+                  <li class="consular-city-wrap">
+                    <p class="accordion consular-city legalization-documents__second-level-item">Люблин</p>
+                    <ul class="panel legalization-documents__consular-doc-list">
+                      <li><a class="legalization-documents__link" href="#">Постоянный / временный консульский учёт</a></li>
+                    </ul>
+                  </li>
+                  <li class="consular-city-wrap">
+                    <p class="accordion consular-city legalization-documents__second-level-item">Варшава</p>
+                    <ul class="panel legalization-documents__consular-doc-list">
+                      <li><a class="legalization-documents__link" href="#">Постоянный / временный консульский учёт</a></li>
+                      <li><a class="legalization-documents__link" href="#">Постоянный / временный консульский учёт детей</a></li>
+                    </ul>
+                  </li>
+                  <li class="consular-city-wrap">
+                    <p class="accordion consular-city legalization-documents__second-level-item">Гданьск</p>
+                    <ul class="panel legalization-documents__consular-doc-list">
+                      <li><a class="legalization-documents__link" href="#">Постоянный / временный консульский учёт</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="legalization-documents__second-level-block">
+                <p class="legalization-documents__second-level-item accordion">Россия</p>
+                <ul class="panel legalization-documents__consular-doc-list">
+                </ul>
+              </li>
+              <li class="legalization-documents__second-level-block">
+                <p class="legalization-documents__second-level-item accordion">Беларусь</p>
+                <ul class="panel legalization-documents__consular-doc-list">
 
+                </ul>
+              </li>
+            </ul>
           </div>
         </li>
       </ul>
@@ -554,6 +598,7 @@
 <script src="js/main.js"></script>
 <script src="js/index-load.js"></script>
 <script src="js/goup.js"></script>
-<script src="js/accordion.js"></script>
+<script src="js/legalization-accordion.js"></script>
+<script src="js/legalization.js"></script>
 </body>
 </html>
