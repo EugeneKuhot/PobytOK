@@ -1,0 +1,134 @@
+.legalization-documents__list {
+  padding: 0;
+  list-style: none;
+  width: 57%;
+  margin: auto;
+}
+
+.legalization-documents {
+  min-height: 575px;
+  background: #F2F4F5;
+}
+
+.legalization-documents__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 117px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 24px rgba(6,52,83,.1);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.legalization-documents__item::after {
+  content: '01';
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: url("../img/svg/legalization-circle.svg") no-repeat;
+  width: 18%;
+  height: 100%;
+  position: absolute;
+  top: calc(50% - 52px);
+  right: 0;
+  color: #FFFFFF;
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.legalization-documents__item:first-child::after {
+  content: '01';
+}
+
+.legalization-documents__item:nth-child(2)::after {
+  content: '02';
+}
+
+.legalization-documents__item:nth-child(3)::after {
+  content: '03';
+}
+
+.legalization-documents__item .accordion {
+  padding: 50px 170px 50px 50px;
+  width: 82%;
+}
+
+.legalization-documents .container {
+  min-height: 575px;
+  padding: 100px 0;
+}
+
+.legalization-documents__item span {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #063453;
+}
+
+.legalization-documents__item:first-child::before {
+  content: 'NEW';
+  display: block;
+  color: #DFE5EC;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
+  position: absolute;
+  left: 50px;
+  top: 10px;
+}
+
+.legalization-documents__second-level {
+  width: 82%;
+  border-top: 1px solid #F2F4F5;
+  margin-left: 25px;
+}
+
+.legalization-documents__second-level p {
+  padding-left: 40px;
+}
+
+.legalization-documents__doc-list {
+  list-style: none;
+}
+
+.legalization-documents__doc-list li {
+  min-height: 90px;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #063453;
+  display: flex;
+  align-items: center;
+}
+
+.legalization-documents__link {
+  display: flex;
+  align-items: center;
+  padding: 35px 40px 35px 25px;
+  width: 100%;
+  min-height: 90px;
+  cursor: pointer;
+  color: #063453;
+  transition: all .3s ease;
+  position: relative;
+}
+
+.legalization-documents__link:hover {
+  background-color: #DFE5EC;
+  transition: all .3s ease;
+}
+
+.legalization-documents__link::after {
+  content: '';
+  width: 23px;
+  height: 10px;
+  background: url(../img/svg/arrow.svg) no-repeat;
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 10px);
+  cursor: pointer;
+  z-index: 2;
+  transform: rotate(-90deg);
+}

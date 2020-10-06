@@ -1,3 +1,52 @@
 .legalization__greetings {
-  height: 538px;
+  min-height: 538px;
+  background-color: #E5E5E5;
+}
+
+.legalization__greetings.greetings__container--onload {
+  background: url(../img/svg/ok.svg) no-repeat 65% bottom,url(../img/svg/Ellipse.svg) no-repeat 40% top, #E5E5E5;
+}
+
+.legalization__greetings .container {
+  height: 100%;
+}
+
+.legalization__title {
+  font-family: "Khula-Regular", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 78px;
+  color: #063453;
+  text-align: center;
+  margin: 85px 0 115px;
+}
+
+.legalization__info-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legalization__info-wrap .head__info--center:first-child {
+  left: 0;
+}
+
+.legalization__info-wrap .head__info--center:last-child {
+  right: 0;
+}
+
+.legalization__greetings::after {
+  content: '';
+  display: block;
+  height: 215px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.legalization__greetings {
+  flex-direction: column;
+}
+
+svg.legalization__info-wrap-icon {
+  top: 110px;
 }
