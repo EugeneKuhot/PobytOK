@@ -87,7 +87,7 @@ var rangeS2 = parent[1].querySelectorAll("input[type=range]"),
 
   const allRanges = document.querySelectorAll(".range-slider");
   allRanges.forEach(wrap => {
-  const range = wrap.querySelector(".range-wrap__max-range");
+  const range = wrap.querySelector(".input-with-keypress-1");
   const bubble = wrap.querySelector(".range-output");
 
   range.addEventListener("input", () => {
@@ -96,7 +96,7 @@ var rangeS2 = parent[1].querySelectorAll("input[type=range]"),
   setBubble(range, bubble);
   });
 
-  function setBubble(range, bubble) {
+  function setBubble(range, bubble) {range
   const min = range.min ? range.min : 0;
   const max = range.max ? range.max : 100;
   const val = range.value;

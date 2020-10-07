@@ -30,3 +30,143 @@
   border: none;
   box-shadow: none;
 }
+
+
+
+
+.wrapper {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.m-b-50 {
+  margin-bottom: 50px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.p-l-r{
+  padding: 0 30px;
+}
+
+
+
+
+.polzunok-container-5 * {
+  box-sizing: border-box;
+  outline: none;
+}
+.polzunok-container-5 {
+  padding: 10px 16px;
+  margin: 30px;
+}
+.polzunok-container-5:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.polzunok-container-5 .ui-slider {
+  position: relative;
+  background: #BFE2FF;
+  height: 10px;
+  border-radius:10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.polzunok-container-5 .ui-slider .ui-slider-handle {
+  position: absolute;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 4px solid #BFE2FF;
+  top: -11px;
+  background: #FFF;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, border 0.4s;
+}
+.polzunok-container-5 .ui-slider .ui-slider-handle:hover,
+.polzunok-container-5 .ui-slider .ui-slider-handle:focus {
+  transform: scale(1.2);
+  border: 4px solid #337AB7;
+}
+.polzunok-input-5-left,
+.polzunok-input-5-right {
+  height: 32px;
+  background: #FFF;
+  border-radius: 28px;
+  border: 4px solid #BFE2FF;
+  text-align:center;
+  font-size: 18px;
+  padding: 16px;
+  width: 140px;
+  margin-top:30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+}
+.polzunok-input-5-left {
+  float: left;
+}
+.polzunok-input-5-right {
+  float: right;
+}
+.polzunok-container-5 .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  height: 10px;
+  border: 0;
+  background: #337AB7;
+  border-radius:10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+
+/* input para recoger valores */
+.input-tooltip{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100px;
+	border: none;
+	height: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+  text-align: center;
+}
+
+/* label max */
+.max{
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+/*label min */
+.min{
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+/* escondemos elementos del interior del manejador */
+.noUi-handle:after, .noUi-handle:before, .noUi-handle:after, .noUi-handle:after {
+display: none
+}
+
+/* limite minimo*/
+.lim-min{
+    position: absolute;
+    width: 20%;
+    height: 70px;
+    background: silver;
+    opacity: 0.5;
+    top: -34px;
+    left: 0;
+    z-index: 0;
+}
+

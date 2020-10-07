@@ -10,7 +10,6 @@
 
 .legalization__greetings .container {
   height: 100%;
-  position: relative;
 }
 
 .legalization__title {
@@ -57,10 +56,11 @@ svg.legalization__info-wrap-icon {
 
 .legalization__greetings-icon {
   position: absolute;
-  top: 100%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
+  transform: translateX(-50%);
+  max-width: 1145px;
 }
 
 .legalization__desc {
@@ -70,7 +70,7 @@ svg.legalization__info-wrap-icon {
   line-height: 30px;
   text-align: center;
   color: #7B8A99;
-  padding: 10px 0 70px 0;
+  padding: 85px 0 70px 0;
 }
 
 .legalization__desc-text {
