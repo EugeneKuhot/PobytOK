@@ -84,6 +84,7 @@
 .header-nav__item--message-item {
   display: flex;
   align-items: center;
+  padding-top: 5px;
 }
 
 .header-nav__message-btn-text {
@@ -248,6 +249,15 @@
   transition: all .3s ease;
 }
 
+.like-count-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.like-count-btn {
+  padding: 5px 0 0px 35px;
+}
+
 @media (max-width: 995px) {
   .message-icon-desktop,
   .registration-btn--icon {
@@ -338,7 +348,7 @@
   }
 
   .tablet-container {
-    width: 85%;
+    width: 100%;
     margin: auto;
   }
 
@@ -405,5 +415,9 @@
     font-size: 16px;
     line-height: 18px;
     font-family: "Cuprum-Regular", "Arial", sans-serif;
+  }
+
+  .header-nav__item--message-item {
+    padding: 0;
   }
 }
