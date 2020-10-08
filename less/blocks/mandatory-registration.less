@@ -5,10 +5,11 @@
 
 .mandatory-registration-popup__wrap {
   max-width: 766px;
-  width: 58%;
-  height: 370px;
-  margin: auto;
+  width: 45%;
+  background-color: #fff;
   position: relative;
+  margin: 11% auto;
+  border-radius: 1px;
 }
 
 .mandatory-registration-popup__top-block {
@@ -78,11 +79,26 @@
   .mandatory-registration-popup__bottom-block .registration-btn {
     padding: 5px;
   }
+
+  .mandatory-registration-popup__wrap {
+    width: 90%;
+  }
+
+  .mandatory-registration-popup__top-block p,
+  .mandatory-registration-popup__bottom-block > div {
+    padding: 40px 0;
+    width: 70%;
+  }
+
+  .mandatory-registration-popup__bottom-block .registration-btn,
+  .mandatory-registration-popup__bottom-block .login-btn {
+    width: 150px;
+  }
 }
 
 @media (max-width: 580px) {
   .mandatory-registration-popup__top-block p,
-  .mandatory-registration-popup__bottom-block>div {
+  .mandatory-registration-popup__bottom-block > div {
     font-size: 14px;
     line-height: 22px;
     padding: 30px 0;
@@ -91,7 +107,7 @@
 
   .mandatory-registration-popup__bottom-block .registration-btn span,
   .mandatory-registration-popup__bottom-block .login-btn {
-      font-size: 16px;
+    font-size: 16px;
   }
 
 }
