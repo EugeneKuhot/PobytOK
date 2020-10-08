@@ -77,8 +77,8 @@
 .noUi-touch-area {
   height: 100%;
   width: 100%;
- 
-  
+
+
 }
 .noUi-state-tap .noUi-connect,
 .noUi-state-tap .noUi-origin {
@@ -96,7 +96,7 @@
 .noUi-horizontal .noUi-handle {
   width: 34px;
   height: 28px;
-  right: -17px;
+  right: -21px;
   top: -10px;
 }
 .noUi-vertical {
@@ -115,11 +115,7 @@
 /* Styling;
  * Giving the connect element a border radius causes issues with using transform: scale
  */
-.noUi-target {
-  background: #063453;
 
-  
-}
 .noUi-connects {
   border-radius: 3px;
 }
@@ -147,13 +143,14 @@
 /* Handle stripes;
  */
 
+
  .noUi-tooltip:after{
   content: "ПОКАЗАТЬ 12 890 РЕЗУЛЬТАТОВ";
   height: 140px;
   width: 10px;
- 
+
   left: 31px;
-  
+
   width:263px;
   height:58px;
   background:#dce8f1;
@@ -196,10 +193,10 @@
     width: 130px;
    top: 63px;
     left: -91px;
-   
+
   }
-   
-  
+
+
   .noUi-tooltip:before{
    left: 0;
    top:56px;
@@ -210,7 +207,7 @@
 
 .noUi-tooltip{
  background: transparent !important;
- color: transparent !important; 
+ color: transparent !important;
  border: none !important;
 }
 /* .noUi-handle:after {
@@ -390,3 +387,6 @@
   /* display: none; */
   /* margin-top: 10000px;
 } */
+.noUi-tooltip {
+  display: none;
+}

@@ -142,11 +142,15 @@
     left: 0;
     width: 100%;
     @media (max-width: @tablet) {
-      bottom: 0;
       height: auto;
       text-align: center;
-      position: relative;
-      margin-bottom: 19px;
+      position: absolute;
+      bottom: 20px;
+      max-width: calc(100% - 30px);
+      margin: 0 auto;
+      display: block;
+      left: 0;
+      right: 0;
     }
     .select-wrap.is-active .select__body {
       top: 60px;
@@ -352,7 +356,9 @@
         margin: 0 0 23px;
         text-align: right;
         @media (max-width: @tablet) {
-          margin-bottom: 17px;
+          margin: 0 auto 20px;
+          max-width: 70%;
+          text-align: center;
         }
       }
     }
@@ -408,7 +414,7 @@
     justify-content: space-between;
     &--text {
       font-size: 18px;
-      font-weight: 700;
+      font-family: "Cuprum-Bold", "Arial", sans-serif;
       text-transform: uppercase;
       transition: color .3s ease;
       color: #7B8A99;
@@ -480,8 +486,8 @@
 
 
 .btn-add {
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: bold;
   color: #F2F2F2;
   background: #00AB5B;
   border-radius: 5px;
@@ -499,7 +505,7 @@
     padding: 16px 45px;
     display: flex;
     margin: 0 auto;
-    max-width: 268px;
+    max-width: 280px;
   }
   svg {
     margin-right: 10px;
@@ -604,6 +610,7 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     &__item {
       width: 100%;
@@ -697,7 +704,7 @@
   }
 
   .offers-block__item {
-    width: 49%;
+    width: calc(50% - 10px);
   }
 }
 
@@ -714,11 +721,26 @@
   }
 }
 
+@media (max-width: 768px) {
+  .vacancy__search .container {
+    padding: 0;
+  }
+
+  .vacancy__header--ttl h1 {
+    margin-top: 90px;
+  }
+}
+
+
 @media (max-width: 767px) {
   .vacancy__search form {
     display: block;
     flex-wrap: wrap;
     width: 70%;
+  }
+
+  .vacancy__header--ttl h1 {
+    margin-top: 45px;
   }
 
   .vacancy__search form > div,

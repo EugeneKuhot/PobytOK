@@ -104,7 +104,7 @@
 
 .new-ads__active-wrap::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
   background-color: #ebebeb;
 }
 
@@ -155,6 +155,10 @@
 .new-ads__logo-wrap img {
   max-width: 100%;
   max-height: 100%;
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .new-ads__logo-wrap::before {
@@ -347,7 +351,7 @@ h3.new-ads__item-title {
   }
 
   .new-ads__active-wrap::-webkit-scrollbar {
-   display: none;
+    display: none;
   }
 
   .new-ads__active-wrap::-webkit-scrollbar-thumb {
@@ -384,6 +388,10 @@ h3.new-ads__item-title {
   .new-ads__title-wrap {
     padding-top: 20px;
     padding-bottom: 40px;
+  }
+
+  .new-ads-ad {
+    padding-left: 10px;
   }
 }
 

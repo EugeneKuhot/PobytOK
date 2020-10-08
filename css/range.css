@@ -18,7 +18,7 @@
   width: 25px;
   height: 25px;
   top: -12px;
-  border-radius: 50%;
+  border-radius: 30%;
   border: none;
   background: url("../img/svg/range.svg") no-repeat;
 }
@@ -51,10 +51,8 @@
 }
 
 .p-l-r{
-  padding: 0 30px;
+  padding: 0 5px;
 }
-
-
 
 
 .polzunok-container-5 * {

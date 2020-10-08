@@ -111,7 +111,7 @@
 @media (max-width: 995px) {
 
   .footer__wrapper {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .footer__copyright {
@@ -129,6 +129,12 @@
   .footer__address-wrap,
   .footer__mail-wrap {
     margin-bottom: 55px;
+  }
+
+  .footer__address-wrap,
+  .footer__mail-wrap {
+    max-width: 50%;
+    flex: 0 0 50%;
   }
 }
 

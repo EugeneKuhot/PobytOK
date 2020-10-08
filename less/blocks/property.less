@@ -113,5 +113,26 @@
   .property-greetings {
     min-height: 500px;
     height: auto;
+    position: relative;
+  }
+
+  .main__search {
+    position: absolute;
+    bottom: 20px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+    display: block;
+    left: 0;
+    right: 0;
+  }
+
+  .property-greetings .vacancy__header--ttl {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .property-greetings .vacancy__header--ttl {
+    padding-top: 45px;
   }
 }
