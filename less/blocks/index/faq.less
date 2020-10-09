@@ -150,17 +150,22 @@
 }
 
 .accordion::after {
-  content: '\002B';
+  content: '';
   position: absolute;
-  color: #777;
-  font-weight: bold;
   right: 0;
   top: calc(50% - 13px);
-  font-size: 30px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/svg/plus.svg") no-repeat center;
 }
 
 .active:after {
-  content: "\2212";
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/svg/minus.svg") no-repeat center;
 }
 
 .panel {
@@ -178,6 +183,7 @@
 .faq__see-all {
   border: none;
   display: none;
+  font-family: "Cuprum-Bold", "Arial", sans-serif;
 }
 
 
@@ -220,6 +226,27 @@
 
   .faq__title::after {
     left: calc(50% - 42px);
+  }
+}
+
+@media (max-width: 768px) {
+  .faq {
+    width: 100%;
+  }
+
+  .faq__see-all {
+    margin-left: auto;
+  }
+
+  .faq__questions-block {
+    padding: 55px 15px 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .faq__see-all {
+    margin-right: auto;
+    margin-left: 0;
   }
 }
 
