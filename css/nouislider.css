@@ -185,6 +185,14 @@
  transform:rotate(-90deg)
 }
 
+.noUi-handle.noUi-handle-lower {
+  right: -33px;
+}
+
+.noUi-handle.noUi-handle-upper {
+  right: -13px;
+}
+
 @media (max-width: 1200px) {
   .noUi-tooltip:after{
     white-space: pre;
