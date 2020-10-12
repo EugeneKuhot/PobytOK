@@ -65,9 +65,36 @@
   transition: all .3s ease;
 }
 
-.legalization-documents__item .accordion {
+
+.legalization-documents__item .legalization-accordion {
   padding: 50px 170px 50px 50px;
   width: 82%;
+
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  text-align: left;
+  outline: 0;
+  transition: .4s;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.legalization-accordion::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(50% - 13px);
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/svg/plus.svg) no-repeat center;
+}
+
+.legalization-accordion.active::after {
+  background: url(../img/svg/minus.svg) no-repeat center;
 }
 
 .legalization-documents .container {
@@ -163,7 +190,7 @@
   content: '';
   width: 23px;
   height: 10px;
-  background: url(../img/svg/arrow.svg) no-repeat;
+  background: url(../img/svg/arrow.svg) no-repeat !important;
   position: absolute;
   right: 15px;
   top: calc(50% - 10px);
@@ -248,7 +275,7 @@
 
   .legalization-documents__item span,
   .legalization-documents__link {
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 20px;
   }
 
@@ -271,6 +298,16 @@
 
   .legalization-documents__second-level-list {
     padding: 0;
+  }
+
+  .legalization-documents__item .legalization-accordion {
+    width: 100%;
+    padding: 40px 35px 40px 20px;
+  }
+
+  .legalization-accordion::after {
+    right: 20px;
+    top: calc(50% - 7px);
   }
 }
 

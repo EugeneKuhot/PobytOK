@@ -2,7 +2,7 @@
 
 (function () {
 
-  let acc = document.getElementsByClassName("accordion");
+  let acc = document.getElementsByClassName("legalization-accordion");
   let i;
 
   for (i = 0; i < acc.length; i++) {
