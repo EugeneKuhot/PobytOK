@@ -60,7 +60,7 @@
     getSignPopup(regWrap, regBtn);
   });
 
-  let documentsName = document.querySelectorAll('.legalization-documents__link');
+  let documentsName = document.querySelectorAll('li.legalization-documents__link');
 
   documentsName.forEach(el => el.addEventListener('click', function () {
     mandatoryOverlay.classList.remove('visually-hidden');
