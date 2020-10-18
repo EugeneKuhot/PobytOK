@@ -13,11 +13,19 @@
   }
 
   function toggleUnderList(button) {
-    closeUnderlists();
+
     let parentEl = button.parentNode;
     let underList = parentEl.querySelector('.categories-underlist-wrap');
-    underList.classList.toggle('hidden');
-    parentEl.classList.toggle('active-category');
+
+    if (parentEl.classList.contains('active-category')) {
+      underList.classList.add('hidden');
+      parentEl.classList.remove('active-category');
+    } else {
+      closeUnderlists();
+      underList.classList.remove('hidden');
+      parentEl.classList.add('active-category');
+    }
+
   }
 
   categoriesItems.forEach(el => el.addEventListener('click', function () {
@@ -25,18 +33,6 @@
   }));
 
 
-
-
-
-  categoriesItems.forEach(item => {item.addEventListener('click', categoryToogle)});
-
-
-
-    function selectToogle () {
-      this.parentElement.classList.toggle('is-active');
-      let icon = this.querySelector('.select__icon');
-      icon.classList.toggle('arrow-up')
-    }
 
 
 })();

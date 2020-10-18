@@ -228,8 +228,9 @@
   height: 385px;
 }
 
-.child-item .categories-underlist {
-  height: 145px;
+.child-item .categories-underlist,
+.music-item .categories-underlist {
+  height: 146px;
 }
 
 .categories-item.child-item.active-category {
@@ -242,10 +243,6 @@
 
 .sport-item .categories-underlist {
   height: 265px;
-}
-
-.music-item .categories-underlist {
-  height: 145px;
 }
 
 .categories-item.music-item.active-category {
@@ -328,6 +325,11 @@
 @media (max-width: 995px) {
   .empty-category {
     display: none;
+  }
+
+  .active-category .categories__link-icon,
+  .active-category .services__title {
+    opacity: 0.5;
   }
 }
 
