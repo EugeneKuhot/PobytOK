@@ -6,7 +6,7 @@
 }
 
 .notice-greetings.greetings__container--onload {
-  background: url(../img/svg/notice-greetings.svg) no-repeat center , #E5E9EE;
+  background: url(../img/svg/notice-greetings.svg) no-repeat center, #E5E9EE;
   background-size: 100%;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .notice-greetings .head__info--bottom {
-    right: 35%;
-    top: 61%;
+  right: 35%;
+  top: 61%;
 }
 
 .greetings-background-wrap.notice-board-greetings-bg {
@@ -50,7 +50,7 @@
   font-family: "Khula-Regular", "Arial", sans-serif;
   font-weight: normal;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .notice-greetings .container {
@@ -70,63 +70,67 @@
 }
 
 .notice-title {
-  font-family: "Khula-Regular","Arial",sans-serif;
+  font-family: "Khula-Regular", "Arial", sans-serif;
   font-weight: normal;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   font-size: 49px;
   line-height: 70px;
   color: #3d3d3d;
-  padding-top: 14px;
 }
 
 .categories-list {
   list-style: none;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.categories-btn {
+.categories-btn,
+.categories-link-btn {
   background: transparent;
   border: none;
   outline: none;
-  width: 130px;
+  width: 100%;
   height: 175px;
   padding: 0;
-}
-
-.categories-icon-wrap::before {
-  content: '';
-  display: block;
-  width: 130px;
-  height: 130px;
-  background: url('../img/svg/notice-category-circle.svg') no-repeat top;
-  position: absolute;
-  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .categories-icon-wrap {
   position: relative;
   width: 130px;
-  height: 130px;
+  min-height: 130px;
+  background: url('../img/svg/notice-category-circle.svg') no-repeat top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .categories-icon-wrap .services__link-icon {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transition: all .3s ease;
 }
 
 .categories-underlist {
   list-style: none;
-  height: 246px;
+  height: 205px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  border-top: 1px solid #DFDFDF;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-top: 5px;
+  flex-direction: column;
 }
 
 .categories-underlist-item {
-  height: 82px;
+  height: 45px;
   display: flex;
   align-items: center;
+  width: 25%;
+  margin-top: 12px;
 }
 
 .categories-underlist-link {
@@ -136,7 +140,7 @@
   line-height: 30px;
   color: #063453;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
   position: relative;
@@ -152,7 +156,7 @@
   background: url("../img/svg/select-arrow.svg") no-repeat;
   position: absolute;
   left: -5px;
-  top: 40%;
+  top: 7px;
 }
 
 .categories-underlist-text {
@@ -162,6 +166,169 @@
   line-height: 30px;
   color: #7B8A99;
   margin-left: 5px;
+  text-transform: uppercase;
+}
+
+.categories-underlist-wrap {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  margin-top: 70px;
+  padding-top: 25px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.categories-underlist-main-link {
+  height: 60px;
+  margin-left: 20px;
+}
+
+.categories-underlist-main-link::before {
+  top: 8px;
+}
+
+.categories-item {
+  margin-top: 60px;
+  width: 11%;
+  min-width: 120px;
+}
+
+.categories-item.active-category {
+  height: 560px;
+}
+
+.categories__link-icon {
+  transition: all .3s ease;
+}
+
+.categories-btn:hover .categories__link-icon {
+  transform: scale(1.11);
+  transition: all .3s ease;
+}
+
+.marriage-wrap {
+  height: 85px;
+}
+
+.notice-categories {
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
+.categories-item.marriage-item.active-category {
+  height: 440px;
+}
+
+.categories-item.firm-item.active-category {
+  height: 735px;
+}
+
+.firm-item .categories-underlist {
+  height: 385px;
+}
+
+.child-item .categories-underlist {
+  height: 145px;
+}
+
+.categories-item.child-item.active-category {
+  height: 500px;
+}
+
+.categories-item.sport-item.active-category {
+  height: 620px;
+}
+
+.sport-item .categories-underlist {
+  height: 265px;
+}
+
+.music-item .categories-underlist {
+  height: 145px;
+}
+
+.categories-item.music-item.active-category {
+  height: 500px;
+}
+
+@media (max-width: 1718px) {
+  .categories-item {
+    width: 12.5%;
+  }
+}
+
+@media (max-width: 1541px) {
+  .categories-item {
+    width: 14.2%;
+  }
+}
+
+@media (max-width: 1364px) {
+  .categories-item {
+    width: 16.6%;
+  }
+}
+
+@media (max-width: 1188px) {
+  .categories-item {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1011px) {
+  .categories-item {
+    width: 25%;
+  }
+
+  .categories-underlist-item {
+    width: 33%;
+  }
+
+  .car-item .categories-underlist,
+  .style-item .categories-underlist,
+  .animal-item .categories-underlist {
+    height: 265px;
+  }
+
+  .child-item .categories-underlist,
+  .music-item .categories-underlist {
+    height: 205px;
+  }
+
+  .categories-item.child-item.active-category,
+  .categories-item.prop-item.active-category,
+  .categories-item.electronic-item.active-category,
+  .categories-item.aggricult-item.active-category,
+  .categories-item.music-item.active-category {
+    height: 560px;
+  }
+
+  .categories-item.active-category {
+    height: 610px;
+  }
+
+  .sport-item .categories-underlist {
+    height: 325px;
+  }
+
+  .categories-item.sport-item.active-category {
+    height: 680px;
+  }
+
+  .firm-item .categories-underlist {
+    height: 505px;
+  }
+
+  .categories-item.firm-item.active-category {
+    height: 860px;
+  }
+}
+
+@media (max-width: 995px) {
+  .empty-category {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -198,8 +365,152 @@
   }
 }
 
+@media (max-width: 549px) {
+  .categories-item {
+    width: 33.33%;
+    min-width: auto;
+  }
+
+  .categories-icon-wrap {
+    height: 80px;
+    width: 100%;
+    min-height: 80px;
+    background-size: contain;
+  }
+
+  .categories__link-icon {
+    width: 46px;
+  }
+
+  .categories-underlist-item {
+    width: 100%;
+  }
+
+  .car-item .categories-underlist,
+  .style-item .categories-underlist {
+    height: 585px;
+  }
+
+  .categories-item.active-category {
+    height: 866px;
+  }
+
+  .categories-item {
+    margin-top: 35px
+  }
+
+  .categories-btn, .categories-link-btn {
+    height: 120px;
+  }
+
+  .categories-underlist-wrap {
+    margin-top: 35px;
+    padding-top: 5px;
+  }
+
+  .prop-item .categories-underlist,
+  .electronic-item .categories-underlist,
+  .aggricult-item .categories-underlist {
+    height: 525px;
+  }
+
+  .categories-item.prop-item.active-category,
+  .categories-item.electronic-item.active-category {
+    height: 807px;
+  }
+
+  .categories-item.aggricult-item.active-category {
+    height: 807px;
+  }
+
+  .animal-item .categories-underlist {
+    height: 585px;
+  }
+
+  .child-item .categories-underlist,
+  .music-item .categories-underlist {
+    height: 415px;
+  }
+
+  .categories-item.child-item.active-category,
+  .categories-item.music-item.active-category {
+    height: 696px;
+  }
+
+  .sport-item .categories-underlist {
+    height: 870px;
+  }
+
+  .categories-item.sport-item.active-category {
+    height: 1151px;
+  }
+
+  .firm-item .categories-underlist {
+    height: 1326px;
+  }
+
+  .categories-item.firm-item.active-category {
+    height: 1608px;
+  }
+
+  .marriage-wrap {
+    height: 186px;
+  }
+
+  .categories-item.marriage-item.active-category {
+    height: 468px;
+  }
+
+  .notice-title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+    position: relative;
+  }
+
+  .notice-title::after {
+    content: '';
+    height: 3px;
+    width: 85px;
+    display: block;
+    position: absolute;
+    background: #add9f3;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .notice-new-ads-wrap .new-ads__title.section-title {
+    line-height: 20px;
+  }
+
+  .notice-new-ads-wrap .new-ads__ads-wrap {
+    padding-top: 40px;
+  }
+
+  .categories-underlist {
+    padding-bottom: 0;
+  }
+
+}
+
 @media (max-width: 320px) {
   .notice-board-greetings-bg img {
     right: -75%;
+  }
+
+  .categories-underlist-main-link {
+    margin-left: 0;
+    padding: 30px 0 30px 20px;
+    height: auto;
+  }
+
+  .categories-underlist-main-link::before {
+    top: 35px;
+  }
+
+  .categories-underlist {
+    padding-left: 0;
   }
 }
