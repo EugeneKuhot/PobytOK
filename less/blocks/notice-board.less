@@ -24,7 +24,7 @@
 
 .notice-greetings .head__info--left {
   top: 25%;
-  right: 20%;
+  right: 30%;
 }
 
 .notice-greetings .head__info--bottom {
@@ -115,13 +115,13 @@
 
 .categories-underlist {
   list-style: none;
-  height: 205px;
+  height: 215px;
   display: flex;
   flex-wrap: wrap;
   border-top: 1px solid #DFDFDF;
   padding-bottom: 25px;
   padding-left: 20px;
-  padding-top: 5px;
+  padding-top: 15px;
   flex-direction: column;
 }
 
@@ -173,7 +173,7 @@
   border-top: 1px solid #DFDFDF;
   border-bottom: 1px solid #DFDFDF;
   margin-top: 70px;
-  padding-top: 25px;
+  padding-top: 50px;
   position: absolute;
   left: 0;
   width: 100%;
@@ -230,7 +230,7 @@
 
 .child-item .categories-underlist,
 .music-item .categories-underlist {
-  height: 146px;
+  height: 155px;
 }
 
 .categories-item.child-item.active-category {
@@ -242,7 +242,7 @@
 }
 
 .sport-item .categories-underlist {
-  height: 265px;
+  height: 270px;
 }
 
 .categories-item.music-item.active-category {
@@ -285,12 +285,12 @@
   .car-item .categories-underlist,
   .style-item .categories-underlist,
   .animal-item .categories-underlist {
-    height: 265px;
+    height: 270px;
   }
 
   .child-item .categories-underlist,
   .music-item .categories-underlist {
-    height: 205px;
+    height: 215px;
   }
 
   .categories-item.child-item.active-category,
@@ -306,7 +306,7 @@
   }
 
   .sport-item .categories-underlist {
-    height: 325px;
+    height: 335px;
   }
 
   .categories-item.sport-item.active-category {
@@ -362,6 +362,10 @@
     width: 2065px;
   }
 
+  .new-ads__active-list {
+    margin-bottom: 25px;
+  }
+
   .notice-board-greetings-bg img {
     right: -35%;
   }
@@ -390,7 +394,7 @@
 
   .car-item .categories-underlist,
   .style-item .categories-underlist {
-    height: 585px;
+    height: 595px;
   }
 
   .categories-item.active-category {
@@ -413,7 +417,7 @@
   .prop-item .categories-underlist,
   .electronic-item .categories-underlist,
   .aggricult-item .categories-underlist {
-    height: 525px;
+    height: 535px;
   }
 
   .categories-item.prop-item.active-category,
@@ -426,7 +430,7 @@
   }
 
   .animal-item .categories-underlist {
-    height: 585px;
+    height: 595px;
   }
 
   .child-item .categories-underlist,
@@ -440,7 +444,7 @@
   }
 
   .sport-item .categories-underlist {
-    height: 870px;
+    height: 880px;
   }
 
   .categories-item.sport-item.active-category {
@@ -448,7 +452,7 @@
   }
 
   .firm-item .categories-underlist {
-    height: 1326px;
+    height: 1336px;
   }
 
   .categories-item.firm-item.active-category {
@@ -456,7 +460,7 @@
   }
 
   .marriage-wrap {
-    height: 186px;
+    height: 196px;
   }
 
   .categories-item.marriage-item.active-category {
@@ -499,7 +503,9 @@
 
 @media (max-width: 320px) {
   .notice-board-greetings-bg img {
-    right: -75%;
+    height: 115%;
+    top: 15px;
+    right: -70%;
   }
 
   .categories-underlist-main-link {
@@ -510,6 +516,11 @@
 
   .categories-underlist-main-link::before {
     top: 35px;
+  }
+
+  .notice-greetings.greetings__container--onload {
+    background: url(../img/svg/notice-greetings.svg) no-repeat -575px -25px,#e5e9ee;
+    background-size: 250%;
   }
 
   .categories-underlist {
